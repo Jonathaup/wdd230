@@ -31,3 +31,12 @@ header img{
     height:auto;
     
 }
+footer {
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: .5rem;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
