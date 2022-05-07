@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    font-size: 16px;
+    font-family: 'Crimson Pro', cursive, serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main { 
+    background: linear-gradient(0.25turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);
+    display: grid;
+	grid-template-columns: 1fr;
+    font-size: 1rem;
+    padding: 1rem;
+}
+    
+/* mobile */
+ header {
+    text-align: center;
+    line-height: 10px;
+    text-shadow: 0 0 10px #eeede0;
+
+
+}
+img {
+    max-height: 450px;
+
+
+}
+
+ header,
+ footer {
+    display: flex;
+    background: linear-gradient(0.70turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+h2 {
+    padding: 1rem;
+
+}
+.principaltitulo{
+    margin-top:90px ;
+
+}
+.principal{
+    margin-bottom:50px ;
+}
+main section {
+    margin: 1rem;
+    border: 1px solid #000000;
+    padding: 1rem;
+    background-color: #eeede0;
+    box-shadow: 3px 3px 10px #c54f54;
+    align-items: auto;
+}
+main p {
+    text-align: center;
+}
+    
+main section ul {
+    margin: 1rem 0 0 1rem;
+}
+main picture {
+    display: block;
+    margin: 1rem;
+}
+
+main picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 10px rgb(54, 54, 54);
+}
+/* Navigation Bar */
+nav {
+    background-color: #7fc41b;
+    border-top: 5px solid #eeede0;
+    border-bottom: 5px solid #eeede0;
+}
+
+nav ul { 
+    font-weight: 600;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li { flex: auto; 
+} 
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background: linear-gradient(to right,#c54f54, #7fc41b,#262429) top / var(--d, 0) 10px no-repeat;
+    transition: 0.5s;
+}
+
+nav a {
+    font-size: 1rem;
+}
+    
+nav a:hover {
+    --d: 50%;
+}
+    
+.active {
+    color: #262429;
+}
+/*****************/
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+footer p:last-of-type {
+    color:  white ;    
+    font-weight: 600;
+}

@@ -1,0 +1,28 @@
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    main {
+		grid-template-columns: 1fr 1fr;
+	}
+    nav ul {
+        display: flex;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 960px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    nav ul {
+        display: flex;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
