@@ -51,7 +51,6 @@ h2 {
 }
 .link{
     margin-top:30px ;
-
     font-size: 2rem;
 
 }
@@ -64,7 +63,6 @@ main section {
     padding: 1rem;
     background-color: #eeede0;
     box-shadow: 3px 3px 10px #c54f54;
-    align-items: auto;
 }
 main p {
     text-align: center;
