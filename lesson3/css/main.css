@@ -7,7 +7,7 @@
 body {
     font-size: 16px;
     font-family: 'Crimson Pro', cursive, serif;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -46,7 +46,13 @@ h2 {
 
 }
 .principaltitulo{
-    margin-top:90px ;
+    margin-top:50px ;
+
+}
+.link{
+    margin-top:30px ;
+
+    font-size: 2rem;
 
 }
 .principal{
