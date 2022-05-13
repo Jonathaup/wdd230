@@ -7,13 +7,9 @@ currentDateSpan.textContent = new Intl.DateTimeFormat("en-GB", {
 
 
 /* hamburger toggle menu */
-const hambutton = document.querySelector('.hamburger');
-const mainnav = document.querySelector('.Navigation')
-
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('respond')}, false);
-
-window.onresize = () => {if (window.innerWidth > 960) mainnav.classList.remove('respond')};
-
+function toggleMenu() {
+  document.getElementsByClassName("navigate")[0].classList.toggle("respond");
+}
 
 /* last modified */
 let nd = new Date();
