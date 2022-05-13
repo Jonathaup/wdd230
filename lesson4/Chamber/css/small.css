@@ -131,63 +131,44 @@ nav {
 /* Footer */
 footer section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
     text-align: center;
     padding: 10px;
 }
 
-footer img{
-    float: left;
-    max-width: 60%;
-    grid-column: 1;
-
-}
-
 .address {
-    line-height: 2.5rem;
+
+    line-height: 1.5rem;
     padding-bottom: 10px;
     font-weight: 600;
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 70px;
-    margin-left: -80px;
-
 }
-
 .address p {
     font-size: 20px;
 
 }
 
+footer #logobajo{
+    max-width:100%;
+}
 footer a {
-    margin-top: 10px;
-    display: grid;
-
+    text-decoration: none;
+    color: #000000;
 }
-
-footer #mapa{
-    display: block;
+footer #mapa {
+    
+    max-width:10%;
     margin: 0px auto;
-    max-width:20%
-    
+    max-width:10%
 }
-
-
-
-footer .url_site{
-    display:flex;
-    flex-direction:column;
-    margin-top:50px;
-    font-weight: 600;
-    font-size: 20px;
-    
-}
-
 footer #lastline {
     text-align: center;
     font-size: 14px;
     padding: 10px;
     font-weight: 600;
+    
+}
 
+.url_site{
+    font-weight: 600;
 }
