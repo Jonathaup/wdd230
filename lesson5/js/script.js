@@ -13,7 +13,7 @@ button.addEventListener('click', () => {
   chapName.appendChild(listChap);
   listChap.textContent = chapter;
   chapName.appendChild(deleteBtn);
-  deleteBtn.textContent = 'X';
+  deleteBtn.textContent = '❌';
   list.appendChild(chapName);
 
   deleteBtn.addEventListener('click', () => {
