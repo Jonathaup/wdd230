@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=head<, initial-scale=1.0">
-    <title>Lesson 4</title>
+    <title>Hazlo Web</title>
     <meta name="description" content="Homepage"/>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Fanwood+Text&display=swap" rel="stylesheet">
    
@@ -16,80 +16,123 @@
 </head>
 <body>
     <header>
-        
-        <a href="index.html" id="toplogo" class="active"><img src="Chamber/images/thumbnails_Logo.png" alt="HazloWeb Logo"/></a>
-        <h1>HazloWeb<span id="oo"><br>Chamber of Commerce</span></h1>
-        <div class="Social_Networks">
-            <a href="https://www.facebook.com/" id="facebook" target="_blank"><img src="Chamber/images/Logo_facebook.png" alt="Logofacebook" width="150"></a>
-            <a href="https://www.linkedin.com/"  target="_blank"><img src="Chamber/images/Logo_Linkedin.png" alt="Logolinkedin" width="100" ></a>
+        <img 
+        id="toplogo" 
+        class="active"
+        src="Chamber/images/thumbnails_Logo.png" 
+        alt="HazloWeb Logo"
+        />
+        <h1>HazloWeb<span id="smtitle"><br>Chamber of Commerce</span></h1>
+        <div class="social">
+            <a href="https://www.facebook.com/" id="facebook" target="_blank"><img src="Chamber\images\face.svg" alt="Logofacebook" width="35"></a>
+            <a href="https://www.linkedin.com/"  target="_blank"><img src="Chamber\images\liicon.svg" alt="Logolinkedin" width="35" ></a>
         </div>
         <nav>
-            <ul class="navigate">
-          <li>
-            <a href="#" onclick="toggleMenu()"
-              ><span>&#9776;</span><span>X</span></a
-            >
-          </li>
-          <li>
-            <a href="index.html" title="HazloWeb Home Page" class="active"
-              >Home</a
-            >
-          </li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <button id="menuButton"><span>&#9776;</span><span>X</span></button>
+            <ul id="mainNav">
+            <li>
+                <a href="index.html" title="HazloWeb Home Page" class="active"
+                >Home</a
+                >
+            </li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <p>
-            <span id="Date"></span> 
+            <span id="currentDate"></span> 
         </p>
     </header>
+    <aside id="banner">
+      "Come join us for the chamber meet and greet Wednesday at 7:00 p.m." - - -
+      - - &nbsp;<button id="close">&#10060;</button>
+    </aside>
     <main>
         <section class="boxes">
-            <div class="box1">
-              <h2>Hero With Site Name & Call To Action</h2>
+            <div class="hero-image">
+              <img src="Chamber\images\ciudad.jpg" alt="HazloWeb"/>
+              <h2 class="welcome">Welcome To HazloWeb</h2>
+              <div class="hero-cta">
+                <a href="join.html">Join Us</a>
+              </div>
             </div>
-            <div class="box2">
-              <h2>Event</h2>
+            <div class="event">
+              <img src="Chamber\images\Programando.jpg" alt="Event"/>
+              <h2 class="box-title">Event</h2>
+              <p>
+                Join and Program with us this Saturday May 28, 2022 
+              </p>
             </div>
-            <div class="box3">
-              <h2>Weather</h2>
+            <div class="weather">
+              <img src="Chamber\images\clima.png" alt="Weather"/>
+              <h2 class="box-title">Weather</h2>
             </div>
-            <div class="box4">
-              <h2>News Release</h2>
+            <div class="news">
+              <img src="Chamber\images\trofeo.jpg" alt="Release"/>
+              <h2 class="box-title">News Release</h2>
+              <p>
+                Our company won the entrepreneur of the year award. It is an achievement 
+                and a demonstration of how much we work for our clients, you can be one of them. 
+              </p>
             </div>
-            <div class="box5">
-              <h2>Join</h2>
+            <div class="join">
+              <img src="Chamber\images\unete.jpg" alt="Join_Us">
+              <h2 class="box-title">Join</h2>
+              <div class="join-cta">
+                <a href="join.html">Join us</a>
+              </div>
+              <p>Join To the Wonderful World Of Hazlo Web</p>
             </div>
-            <div class="box6">
-              <div>Spotlight 1</div>
-              <div>Spotlight 2</div>
-              <div>Spotlight 3</div>
+            <div class="spotlight">
+              <div>
+                <h3>Packets</h3>
+                <img src="Chamber\images\paquetes.jpg" alt="Transport">
+                <p>
+                  We can buy and ship all the packages and supplements you need to be a programmer with us.
+                </p>
+              </div>
+              <div>
+                <h3>School</h3>
+                <img src="Chamber\images\Escuela.jpg" alt="School">
+                <p>
+                  We have our own educational entity so that you can specialize in being a great programmer.
+                </p>
+              </div>
+              <div>
+                <h3>Hospital</h3>
+                <img src="Chamber\images\hospital.jpg" alt="Hospital">
+                <p>
+                  We also have our own Health entity to be prepared for any inconvenience you may have.
+                </p>
+              </div>
             </div>
           </section>
-
-    </main>
+      </main>
     <footer>
-        <section class="Foot1">
-            <img src="Chamber/images/thumbnails_Logo.png" id = "logobajo" alt="HazloWeb Logo"/>
-            <div class="address">
-                <h2>HazloWeb</h2>
+        <section class="lower">
+          <div>
+            <img 
+            class="bottom-logo"
+            src="Chamber/images/thumbnails_Logo.png" 
+            id = "logobajo" 
+            alt="HazloWeb Logo"
+            />
+          </div>
+          <div class="address">
+                <h2>HazloWeb</h2><br>
                 <p>Draper, UT-84020</p>
-            </div>
-            <div class="url_site">
+          </div>
+          <div class="web">
                 <p>TheHazloweb.com <br> Phone:+1-###-###-#### </p>
-                <a href="https://www.google.com/maps/place/Draper,+UT/@40.4934654,-111.8874854,13z/data=!3m1!4b1!4m5!3m4!1s0x8752805153135f0f:0xea3aa3af26cf70b2!8m2!3d40.5246711!4d-111.8638226" target="_blank"><img src="Chamber/images/googlemaps.5.webp" id = "mapa" alt="Logo_Map" ><p id="location">
-                    <p>Location</p>
-                </a>
-            </div>
+                <a href="https://www.google.com/maps/place/Draper,+UT/@40.4934654,-111.8874854,13z/data=!3m1!4b1!4m5!3m4!1s0x8752805153135f0f:0xea3aa3af26cf70b2!8m2!3d40.5246711!4d-111.8638226" target="_blank"><img src="Chamber/images/googlemaps.5.webp" alt="Logo_Map" width = "20"> Location</a>
+          </div>
         </section>
         <p id="lastline">
             &copy; <span id="currentYear"></span> HazloWeb | Jonathan Uribe | WDD 230 Project | Last Updated: <span id="modDate"></span>
         </p>
     </footer>
-
     <script src="Chamber/js/script.js"></script>
-
 </body>
 </html>
