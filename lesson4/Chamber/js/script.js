@@ -25,8 +25,8 @@ document.getElementById("currentYear").textContent = nd.getFullYear();
 document.querySelector("#modDate").textContent = document.lastModified;
 
 
-/* Banner on Mondays & Tuesdays */
-if(now.getDay() === 2 or ===1) {
+/* Banner on Tuesdays */
+if(now.getDay() === 2) {
     document.getElementById("banner").style.display = "block";
 }
 
