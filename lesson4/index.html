@@ -16,61 +16,91 @@
 </head>
 <body>
     <header>
-        <img 
-        id="toplogo" 
-        class="active"
-        src="Chamber/images/thumbnails_Logo.png" 
-        alt="HazloWeb Logo"
-        />
-        <h1>HazloWeb<span id="smtitle"><br>Chamber of Commerce</span></h1>
+        <picture id="toplogo">
+          <source srcset="Chamber/images/thumbnails_Logo150.webp" media="(min-width: 600px)" />
+          <img src="Chamber/images/thumbnails_Logo150.webp" alt="HazloWeb Logo"/>
+        </picture> 
+        <h1>HazloWeb<span id="smtitle"><br />Chamber of Commerce</span></h1>
         <div class="social">
             <a href="https://www.facebook.com/" id="facebook" target="_blank"><img src="Chamber/images/face.svg" alt="Logofacebook" width="35"></a>
             <a href="https://www.linkedin.com/"  target="_blank"><img src="Chamber/images/liicon.svg" alt="Logolinkedin" width="35" ></a>
         </div>
-        <nav>
-            <button id="menuButton"><span>&#9776;</span><span>X</span></button>
+        <button id="menuButton"><span>&#9776;</span><span>X</span></button>
+          <nav>
             <ul id="mainNav">
-            <li>
+              <li>
                 <a href="index.html" title="HazloWeb Home Page" class="active"
-                >Home</a
-                >
-            </li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
+                 >Home</a
+                 >
+              </li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <p>
-            <span id="currentDate"></span> 
-        </p>
+          </nav>
     </header>
+    <div id="currentDate">
+      <span>Date</span>
+    </div>
     <aside id="banner">
       "Come join us for the chamber meet and greet Wednesday at 7:00 p.m." - - -
       - - &nbsp;<button id="close">&#10060;</button>
     </aside>
     <main>
         <section class="boxes">
-            <div class="hero-image">
-              <img src="Chamber/images/ciudad.jpg" alt="HazloWeb"/>
+            <div class="hero">
+              <picture class ="hero-image">
+                <source 
+                 srcset="Chamber/images/wdd230-org967.jpg" 
+                 alt="HazloWeb"
+                 media="(min-width: 600px) and (max-width: 999px)"
+                 />
+                <source srcset="Chamber/images/wdd230-org740.jpg" media="(min-width: 1000px)" />
+                <img src="Chamber/images/wdd230-org542.jpg" alt="Hollyhill Rainbow" />
+              </picture>  
               <h2 class="welcome">Welcome To HazloWeb</h2>
               <div class="hero-cta">
                 <a href="join.html">Join Us</a>
               </div>
             </div>
             <div class="event">
-              <img src="Chamber/images/Programando.jpg" alt="Event"/>
+              <picture>
+                <source
+                  srcset="Chamber/images/Programando566.jpg"
+                  media="(min-width: 600px) and (max-width: 999px)"
+                  />
+                <source
+                  srcset="Chamber/images/Programando355.jpg"
+                  media="(min-width: 1000px)"
+                />
+                <img src="Chamber/images/Programando542.jpg" alt="Event"/>
+              </picture>
               <h2 class="box-title">Event</h2>
               <p>
                 Join and Program with us this Saturday May 28, 2022 
               </p>
             </div>
             <div class="weather">
-              <img src="Chamber/images/clima.png" alt="Weather"/>
-              <h2 class="box-title">Weather</h2>
+              <h2>Weather</h2>
+              <div class ="info">
+                <p id="w1"><span id="temp">50</span>&#176;F</p>
+                <p id="w2">Wind Speed: <span id="windspeed">4</span> mph</p>
+                <p id="w3">Wind Chill: <span id="windchill"></span></p>
+              </div>
             </div>
             <div class="news">
-              <img src="Chamber/images/trofeo.jpg" alt="Release"/>
+              <picture>
+                  <source
+                  srcset="Chamber/images/trofeo967.jpg"
+                  media="(min-width: 600px) and (max-width: 999px)"
+                />
+                <source
+                  srcset="Chamber/images/trofeo740.jpg"
+                  media="(min-width: 1000px)"
+                />
+                  <img src="Chamber/images/trofeo542.jpg" alt="Release"/>
+              </picture>
               <h2 class="box-title">News Release</h2>
               <p>
                 Our company won the entrepreneur of the year award. It is an achievement 
@@ -78,7 +108,13 @@
               </p>
             </div>
             <div class="join">
-              <img src="Chamber/images/unete.jpg" alt="Join_Us">
+              <picture>
+                  <source
+                  srcset="Chamber/images/unete355.jpg"
+                  media="(min-width: 1000px)"
+                />
+                  <img src="Chamber/images/unete719.jpg" alt="Join_Us">
+              </picture>
               <h2 class="box-title">Join</h2>
               <div class="join-cta">
                 <a href="join.html">Join us</a>
@@ -88,21 +124,43 @@
             <div class="spotlight">
               <div>
                 <h3>Packets</h3>
-                <img src="Chamber/images/paquetes.jpg" alt="Transport">
+                <picture>
+                    <source
+                    srcset="Chamber/images/paquetes437.jpg"
+                    media="(min-width: 600px) and (max-width: 999px)"
+                  />
+                  <source
+                    srcset="Chamber/images/paquetes300.jpg"
+                    media="(min-width: 1000px)"
+                  />
+                    <img src="Chamber/images/paquetes486.jpg" alt="Transport">
+                </picture>
                 <p>
                   We can buy and ship all the packages and supplements you need to be a programmer with us.
                 </p>
+                <hr />
               </div>
               <div>
                 <h3>School</h3>
-                <img src="Chamber/images/Escuela.jpg" alt="School">
+                <picture>
+                    <source
+                    srcset="Chamber/images/Escuela437.jpg"
+                    media="(min-width: 600px) and (max-width: 999px)"
+                  />
+                  <source srcset="Chamber/images/Escuela300.jpg" media="(min-width: 1000px)" />
+
+                    <img src="Chamber/images/Escuela486.jpg" alt="School">
+                </picture>
                 <p>
                   We have our own educational entity so that you can specialize in being a great programmer.
                 </p>
+                <hr />
               </div>
               <div>
                 <h3>Hospital</h3>
-                <img src="Chamber/images/hospital.jpg" alt="Hospital">
+                <picture>
+                  <img src="Chamber/images/hospital.jpg" alt="Hospital">
+                </picture>
                 <p>
                   We also have our own Health entity to be prepared for any inconvenience you may have.
                 </p>
@@ -114,9 +172,8 @@
         <section class="lower">
           <div>
             <img 
-            class="bottom-logo"
-            src="Chamber/images/thumbnails_Logo.png" 
-            id = "logobajo" 
+            id="bottom-logo"
+            src="Chamber/images/thumbnails_Logo125.webp" 
             alt="HazloWeb Logo"
             />
           </div>
@@ -134,5 +191,6 @@
         </p>
     </footer>
     <script src="Chamber/js/script.js"></script>
+    <script src="Chamber/js/windchill.js"></script>
 </body>
 </html>

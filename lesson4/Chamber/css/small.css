@@ -12,13 +12,6 @@ body {
     margin: 0 auto;
 }
 
-main { 
-    background: linear-gradient(0.25turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);
-    border-top: 10px solid #ffffff;
-    border-bottom: 10px solid #ffffff;
-    padding: 1rem;
-}
-
 img { 
     width: 100%;
     box-shadow: 3px 3px 12px rgb(54, 54, 54);
@@ -42,8 +35,11 @@ header .social {
     padding-top: 10px;
     gap: 8px;
 }
+header .social img {
+    width: 30px;
+}
 
-header p {
+/* header p {
     grid-column: 1/5;
     text-align: center;
     padding: 5px 0 5px;
@@ -53,12 +49,27 @@ header p {
     color: white;
     font-weight: bold;
 
+} */
+
+#currentDate {
+    display: block;
+    text-align: center;
+    padding: 5px 0 5px;
+    background: linear-gradient(0.25turn,#c54f54, #7fc41b);
+    border: 2px solid #000000;
+    color: white;  
+}
+
+main { 
+    background: linear-gradient(0.25turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);
+    border-top: 10px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+    padding: 10px;
 }
 
 h1 {
-    font-size: 24px;
-    line-height: .6;   
-    text-align: left;
+    font-size: 28px;
+    line-height: .5;   
 }
 
 h3 {
@@ -68,21 +79,35 @@ h3 {
 
 }
  
-
 #smtitle {
     font-size: 12px;
 }
 
+@media only screen and (max-width: 370px) {
+    header {
+        grid-template-columns:  70px 2.5fr 1fr 35px;
+        column-gap: 12px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    #smtitle {
+        font-size: .7rem;
+    }
+    }
+
 /* navigation bar */
-nav {
+/* nav {
     position: relative;
     margin: 0 auto;
     font-weight: 600;
+} */
+nav {
+    grid-column: 1/5
 }
 
 nav ul {
     list-style-type: none; 
-    position: absolute;  
 }
 
 nav ul li a {
@@ -101,19 +126,12 @@ nav ul li a:hover {
     --d: 100%;   
 }
 
-nav button {
-    background: transparent;
-    padding: 6px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    
-}
-
-nav button:hover {
+#menuButton:hover {
     color: white;
     background: linear-gradient(0.25turn,#c54f54, #7fc41b);
     transition: .2s;
     --d: 100%;
+    
 }
 
 #mainNav .active {
@@ -122,17 +140,12 @@ nav button:hover {
 }
 
 #mainNav {
-    right: 35px;
-    top: -20px;
-    width: 20vw;
     border: 2px solid black;
-    background: linear-gradient(0.5turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);;
-    
+    background: linear-gradient(0.5turn, #f9d4d5, #faedd9, #d4fae6, #d5defb);
 }
 
 nav ul {display: none;}
 nav ul.open {display: block;
-    top: 80px;
 }
 
 #menuButton span:nth-child(1) {display: block;}
@@ -158,11 +171,11 @@ nav ul.open {display: block;
     text-align: center;
 }
 /* Hero Box */
- .hero-image, .event, .news, .join, .weather {
+ .hero img, .event, .news, .join, .weather {
     position: relative;
  }
 
- .hero-image img, .event img, .news img, .join img, .weather img {
+ .hero-image img, .event img, .news img, .join img, .info{
      object-fit: cover;
      height: 100%;
  }
@@ -179,8 +192,8 @@ nav ul.open {display: block;
  }
 
  .hero-cta {
-    top: 30px;
-    right: 30px;
+    bottom: 40px;
+    right: 45px;
  }
 
  .hero-cta a, .join-cta a  {
@@ -188,26 +201,22 @@ nav ul.open {display: block;
      text-decoration: none;
  }
 
- .boxes .hero-image .hero-cta:hover, .boxes .join .join-cta:hover {
+ .boxes .hero .hero-cta:hover, .boxes .join .join-cta:hover {
     background-color: #8c181b;
 }
 
  .welcome {
-     position: absolute;
-     bottom: 30px;
-     left: 30px;
-     color: white;
-     font-size:40px;
-
+    font-size: 2rem;
  }
  
 /* Event Box */
-.box-title {
+h2 {
     position: absolute;
     color: rgb(232, 232, 232);
     text-shadow: 2px 4px 4px black;
-    top: 15px;
-    left: 20px;
+    top: 20px;
+    left: 25px;
+    line-height: 1.7rem;
     font-weight: 600;
 
 }
@@ -226,17 +235,41 @@ nav ul.open {display: block;
 }
  
 /* Weather Box */
+
+.info {
+    color: white;
+    text-shadow: 2px 4px 5px black;
+    background: linear-gradient(0.25turn,#c54f54, #7fc41b);
+}
+.weather .info {
+    display: grid; 
+    border-radius:200px;
+  
+}
+#w1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+#w2, #w3 {
+    padding: 10px; 
+    border-top: 3px solid #ffffff; 
+    font-size: 1.2rem;
+}
+
+
 .weather{
 
     border-radius:200px;
 }
 
-.weather img{
-    border-radius:300px;
-}
+
 
 .weather h2{
-    margin-left: 100px;
+    margin-left: 60px;
+    margin-top: -20px;
+    
 }
 /* Join Box */
 .join {
@@ -244,21 +277,26 @@ nav ul.open {display: block;
 }
 
 .join-cta {
-    top: 140px;
-    right: 50px;
- }
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -70px;
+}
 
 /* Spotlight Box */
 .spotlight {
     display: grid;
-    grid-template-columns: 1fr;
+    gap: 10px;
     height: 100%;
     grid-row: 5/7;   
 }
-
-.spotlight div{
-    border:none;
+h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 1.1rem;
 }
+
+
 
 .spotlight div:nth-child(3) {
     display: none;
@@ -269,7 +307,7 @@ nav ul.open {display: block;
     line-height: 1.1;
     font-size: .9rem;
     font-weight: 600;
-    padding:25px;
+    padding: 7px 10px 5px;
 
 }
 
@@ -288,14 +326,15 @@ footer section {
 
 }
 
-.bottom-logo {
+#bottom-logo {
     width: 125px;  
-    margin-top: 10px; 
+    margin: 10px 0 10px; 
 }
 
 .address {
     line-height: 1.5rem;
     padding-bottom: 10px;
+    font-weight: 600;
 
 }
 footer a {
