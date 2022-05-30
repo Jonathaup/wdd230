@@ -39,18 +39,6 @@ header .social img {
     width: 30px;
 }
 
-/* header p {
-    grid-column: 1/5;
-    text-align: center;
-    padding: 5px 0 5px;
-    margin-top: 10px;
-    background: linear-gradient(0.25turn,#c54f54, #7fc41b);
-    border: 2px solid #000000;
-    color: white;
-    font-weight: bold;
-
-} */
-
 #currentDate {
     display: block;
     text-align: center;
@@ -75,7 +63,6 @@ h1 {
 h3 {
     text-align: center;
     padding:10px;
-    border-top:5px solid #000000 ;
 
 }
  
@@ -94,14 +81,10 @@ h3 {
     #smtitle {
         font-size: .7rem;
     }
+    
     }
 
 /* navigation bar */
-/* nav {
-    position: relative;
-    margin: 0 auto;
-    font-weight: 600;
-} */
 nav {
     grid-column: 1/5
 }
@@ -181,7 +164,7 @@ nav ul.open {display: block;
  }
 
  div .hero-cta, div .join-cta {
-     position: absolute;  
+     position:absolute;
      background-color: #c54f54;
      border: 1px solid black;
      border-radius: .5rem;
@@ -190,11 +173,16 @@ nav ul.open {display: block;
      font-weight: bold;
 
  }
+ .welcome{
+    position:relative;
+    top: -50px; 
+
+ }
 
  .hero-cta {
-    bottom: 40px;
-    right: 45px;
+    bottom: 570px;
  }
+
 
  .hero-cta a, .join-cta a  {
      color: white;
@@ -221,6 +209,10 @@ h2 {
 
 }
 
+.welcome{
+    display: ;
+}
+
 .event p, .news p, .join p {
     position: absolute;
     line-height: 1;
@@ -241,20 +233,19 @@ h2 {
     text-shadow: 2px 4px 5px black;
     background: linear-gradient(0.25turn,#c54f54, #7fc41b);
 }
-.weather .info {
+.info {
     display: grid; 
     border-radius:200px;
-  
+    padding-top:20px;
 }
 #w1 {
     font-size: 40px;
     font-weight: bold;
-    padding-top: 15px;
 }
 
 #w2, #w3 {
     padding: 10px; 
-    border-top: 3px solid #ffffff; 
+    border-top: 3px solid black; 
     font-size: 1.2rem;
 }
 
@@ -265,9 +256,8 @@ h2 {
 }
 
 
-
 .weather h2{
-    margin-left: 60px;
+    margin-left: 80px;
     margin-top: -20px;
     
 }
