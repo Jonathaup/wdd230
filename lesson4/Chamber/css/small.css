@@ -108,6 +108,13 @@ nav ul li a:hover {
     font-weight: 600;
     --d: 100%;   
 }
+#menuButton {
+    grid-column: 4/5;
+    background: transparent;
+    padding: 2px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 
 #menuButton:hover {
     color: white;
@@ -154,11 +161,11 @@ nav ul.open {display: block;
     text-align: center;
 }
 /* Hero Box */
- .hero img, .event, .news, .join, .weather {
+ .hero, .event, .news, .join, .weather {
     position: relative;
  }
 
- .hero-image img, .event img, .news img, .join img, .info{
+ .hero img, .event img, .news img, .join img, .info{
      object-fit: cover;
      height: 100%;
  }
@@ -168,7 +175,7 @@ nav ul.open {display: block;
      background-color: #c54f54;
      border: 1px solid black;
      border-radius: .5rem;
-     padding: 5px 12px;
+     padding: 5px 10px 10px;
      box-shadow: 0 0 15px rgb(232, 232, 232);
      font-weight: bold;
 
@@ -198,7 +205,7 @@ nav ul.open {display: block;
  }
  
 /* Event Box */
-h2 {
+.tbox  {
     position: absolute;
     color: rgb(232, 232, 232);
     text-shadow: 2px 4px 4px black;
@@ -276,7 +283,7 @@ h2 {
     height: 100%;
     grid-row: 5/7;   
 }
-h3 {
+.sbox {
     text-align: center;
     padding-bottom: 10px;
     line-height: 1.1rem;
@@ -359,3 +366,69 @@ footer #lastline {
     padding: 3px;
     background-color: #f7c72b;
 }
+
+    /*-----DISCOVER PAGE------*/
+.tgallery {
+    font-size: 1.7rem;
+    color: rgb(232, 232, 232);
+    text-shadow: 2px 4px 4px black;
+    text-align: center;
+    padding: 10px 0 15px;
+}
+
+.gallery-page {
+    display: grid;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 475px;
+    margin: 0 auto;
+}
+
+.gallery p {
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.gallery img[data-src] {
+	filter: blur(.6em);
+}
+
+.gallery img{
+	filter: blur(0);
+	transition: filter .6s;
+    margin: 10px;
+    border: 10px double black;
+    box-shadow: 10px 10px 10px rgb(84, 101, 60);
+}
+.explore {
+    border-top: 3px solid white;
+    margin-top: 40px;
+} 
+.dem-title {
+    grid-row: 1/2;   
+}
+.demographics {
+    padding-left: 40px;
+    grid-row: 2/3;
+}
+
+.demographics p {
+    padding: 5px 0;
+}
+
+.visit-distance {
+    text-align: center;
+    border: 2px solid white;
+    padding-bottom: 20px;
+    margin: 20px 0 10px 40px;
+}
+
+.chart {
+    display: none;
+}
+
+

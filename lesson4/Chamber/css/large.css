@@ -94,4 +94,26 @@
     .spotlight div:nth-child(3) {
         display: block;
     }
+
+    /*-----DISCOVER PAGE------*/
+    .gallery-page {
+        grid-template-rows: 90px 1fr auto;
+        grid-template-columns: 475px 1fr;
+    }
+    .gallery {
+        grid-column: 1/2;
+        grid-row: 1/4; 
+        padding-right: 40px;
+        border-right: 5px solid black;
+    }
+    .visit-distance {
+        grid-row: 3/4;
+    }
+    .demographics {
+        grid-row: 2/3;
+    }
+    .chart {
+        display: contents;
+    }
+
     }
