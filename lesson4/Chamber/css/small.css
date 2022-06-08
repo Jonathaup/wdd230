@@ -398,6 +398,8 @@ footer #lastline {
 .gallery p {
     font-weight: bold;
     margin-top: -10px;
+    padding:10px;
+    text-align: center;
 }
 
 .gallery img[data-src] {
