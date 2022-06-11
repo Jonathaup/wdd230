@@ -472,10 +472,23 @@ form fieldset {
     border: 1px solid black;
     border-radius: 4px;
     padding: 0.75rem;
-    color: rgb(114, 114, 114);
+    color: black;
     width: 100%;
     max-width: 45rem;
     background: linear-gradient(0.25turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);
+  }
+
+  .np {
+    background-color: white;
+  }
+  .bronze {
+    background-color: rgb(205, 127, 50);
+  }
+  .silver {
+    background-color: silver;
+  }
+  .gold {
+    background-color: gold;
   }
   
   form label.sec1 input:not([type="range"]),
