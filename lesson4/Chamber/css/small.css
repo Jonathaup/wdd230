@@ -431,4 +431,137 @@ footer #lastline {
     display: none;
 }
 
+/* --------JOIN PAGE-------- */
+
+.mem-form h2 {
+    color: rgb(232, 232, 232);
+    text-shadow: 2px 4px 4px black;
+    line-height: 1.5rem;
+    padding: 30px 0 30px;
+}
+
+form fieldset {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 2% 2rem 2%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 10px rgb(61, 61, 61);
+  }
+  
+  form legend {
+    color: white;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #040404;
+  }
+  
+  
+  form label.sec1 {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: 0.9rem;
+  }
+  
+  form label.sec1 input,
+  form label.sec1 select, form label.sec1 textarea {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: rgb(114, 114, 114);
+    width: 100%;
+    max-width: 45rem;
+    background: linear-gradient(0.25turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);
+  }
+  
+  form label.sec1 input:not([type="range"]),
+  form label.sec1 select {
+    -webkit-appearance: none;
+  }
+  
+  form label.sec1 textarea {
+    height: 8rem;
+  }
+  
+  form button.send {
+    border: none;
+    background-color: #0076B2;
+    color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1.5rem 0 2rem 2%;
+    width: 96%;
+    max-width: 45rem;
+    cursor: pointer;
+    font-size: .9rem;
+    box-shadow: 5px 5px 10px rgb(61, 61, 61);
+  }
+  
+  form label.sec1 input:required {
+    border-left: 10px solid rgb(165, 1, 1);
+  }
+  
+  form label.sec1 input:required:valid {
+    border-left: 10px solid green;
+  }
+
+  .memberships h3 {
+    color: white;
+    margin: 15px 0 0 30px;
+    font-size: 1.5rem;
+}
+
+.memberships div {
+    border: 10px double black;
+    margin: 0 0 15px 30px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgb(61, 61, 61);
+}
+
+.memberships h4 {
+    text-shadow: 3px 3px 5px white;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    padding-bottom: 5px;
+}
+
+.memberships p {
+    line-height: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+    padding: 5px 0 5px;
+}
+
+.memberships ul li {
+    line-height: 1rem;
+    padding: 2px;
+    margin-left: 15px;
+}
+
+#member1 {
+    background-color: white;
+}
+#member2 {
+    background-color: rgb(205, 127, 50);
+}
+#member3 {
+    background-color:silver;
+}
+#member4 {
+    background-color: gold;
+}
+
+/* ----THANK YOU------- */
+#thanks {
+    padding: 50px 0 50px;
+    font-weight: bold;
+}
+
+.timestamp {
+    width: 500px;
+}
 

@@ -79,5 +79,29 @@
         .gallery img:hover {
             box-shadow: 10px 10px 10px rgb(255, 255, 255);
         }
-        }
+        /*--------JOIN PAGE------*/
+  .main-join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mem-form h2{
+  font-size: 1.8rem;
+}
+
+.memberships {
+  grid-column: 2/3;
+  margin-top: 70px;
+}
+
+.groups {
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap: 30px;
+}
+
+.grid {
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap: 30px;
+}
+}
     
