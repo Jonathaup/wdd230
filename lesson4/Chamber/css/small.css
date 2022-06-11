@@ -9,20 +9,24 @@ body {
     font-size: 18px;
     font-family: 'Crimson Pro', cursive, serif;
     max-width: 1500px;
+    min-width: 325px;
     margin: 0 auto;
 }
 
 img { 
     width: 100%;
+    height: auto;
     box-shadow: 3px 3px 12px rgb(54, 54, 54);
 }
 
+/* -------Header-------- */
+
 header {
     display: grid;
-    grid-template-columns:  75px 1fr 60px 35px;
+    grid-template-columns:  85px 2.5fr 1fr 35px;
     column-gap: 10px;
     align-items: center;
-    padding: 20px 20px 10px 20px; 
+    padding: 10px;
 }
 
 header,
@@ -33,7 +37,7 @@ footer {
 header .social {
     display: flex;
     padding-top: 10px;
-    gap: 8px;
+    gap: 5px;
 }
 header .social img {
     width: 30px;
@@ -47,6 +51,8 @@ header .social img {
     border: 2px solid #000000;
     color: white;  
 }
+
+/* ------Main----- */
 
 main { 
     background: linear-gradient(0.25turn, #eeede0, #cbe709, #7fc41b, #c54f54,#262429);
@@ -70,6 +76,7 @@ h3 {
     font-size: 12px;
 }
 
+/* ----to make logo smaller in very small mobile view ------*/
 @media only screen and (max-width: 370px) {
     header {
         grid-template-columns:  70px 2.5fr 1fr 35px;
@@ -391,6 +398,8 @@ footer #lastline {
 .gallery p {
     font-weight: bold;
     margin-top: -10px;
+    padding:10px;
+    text-align: center;
 }
 
 .gallery img[data-src] {
