@@ -1,4 +1,4 @@
-const requestURL = "https://jonathaup.github.io/wdd230/chamber/json/data.json";
+const requestURL = "https://jonathaup.github.io/wdd230/lesson4/Chamber/json/data.json"
 
 fetch(requestURL)
   .then(function (response) {
