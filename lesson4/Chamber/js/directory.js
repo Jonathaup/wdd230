@@ -21,10 +21,10 @@ fetch(requestURL)
         let membershipLevel = document.createElement('p');
       
         // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-        picture.setAttribute('src', "images/" + company.logo);
+        picture.setAttribute('src', "Chamber/images/" + company.logo);
         picture.setAttribute('alt', `${company.companyName}`);
         picture.setAttribute('loading', 'lazy');
-       
+        
         // Change the textContent property of the h2 element to contain the prophet's full name
         companyName.innerHTML = `${company.companyName}`;
         address.innerHTML = `${company.address}`;
