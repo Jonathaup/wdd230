@@ -579,3 +579,78 @@ form fieldset {
     width: 500px;
 }
 
+/* ------DIRECTORY-------- */
+#directory-title {
+    text-align: center;
+}
+
+.groups {
+    display: grid;
+}
+
+.groups img {
+    border: none;
+    box-shadow: none;
+    height: 100px;
+    width: auto;
+}
+
+.groups div {
+    background: white;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 10px rgb(61, 61, 61);
+    text-align: center;
+    padding: 20px;
+	margin: 10px 5px;
+    line-height: 1.4rem;
+}
+
+/* Directory - Grid & List Buttons */
+.grid {
+    display: grid;
+  }
+
+.grid-buttons {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.grid-buttons button {
+	padding: 1rem 2.5rem;
+    background: linear-gradient(0.25turn, #028c45, #21409a);
+    font-size: .9rem;
+    margin: 0 5px;
+    color: white;
+    border: 2px solid white;
+}
+
+.grid div {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+	margin: 10px 5px;
+    line-height: 1.4rem;
+}
+
+.list {
+    display:block;
+}
+
+.list div {
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.list div img {
+    display: none;
+}
+
+.list div:nth-child(odd) {
+    background: #ffffff;
+}
+  
+.list div:nth-child(even) {
+    background: linear-gradient(0.40turn, #f9d4d5, #faedd9, #d4fae6, #d5defb);
+}
+

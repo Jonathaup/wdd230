@@ -116,4 +116,19 @@
         display: contents;
     }
 
+    .list div {
+        display: flex;
+    }
+    
+    .list h3 {
+        Width: 240px;
+        text-align: left;
+        line-height: 1.2rem;
+    }
+    
+    .list p {
+        padding-right: 30px;
+        line-height: 1.2rem;
+    }
+
     }
