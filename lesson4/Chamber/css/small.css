@@ -277,7 +277,7 @@ nav ul.open {display: block;
     grid-column:2;
     font-weight:800;
     font-size:30px;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 #w3{
