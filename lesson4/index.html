@@ -76,11 +76,21 @@
             </div>
             <div class="weather">
               <h2 class="tbox">Weather</h2>
-              <div class ="info">
-                <p id="w1"><span id="temp">50</span>&#176;F</p>
-                <p id="w2">Wind Speed: <span id="windspeed">4</span> mph</p>
+              <section class ="info">
+                <p id="w1"><span id="current-temp"></span>&#176;F</p>
+                <figure id="w4">
+                  <span id="iconsrc"></span>
+                  <img
+                    src="https://openweathermap.org/img/w/"
+                    alt="Weather Pictures"
+                    id="weather-icon"
+                    width="30"
+                  />
+                  <figcaption></figcaption>
+                </figure>
+                <p id="w2">Wind Speed: <span id="windspeed"></span> mph</p>
                 <p id="w3">Wind Chill: <span id="windchill"></span></p>
-              </div>
+              </section>
             </div>
             <div class="news">
               <picture>

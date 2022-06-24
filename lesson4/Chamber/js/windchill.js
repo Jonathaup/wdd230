@@ -3,7 +3,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
 const url =
-  "//api.openweathermap.org/data/2.5/weather?q=HollyHill&units=imperial&appid=cbdbf1656275e48900a3931f13929b10";
+"//api.openweathermap.org/data/2.5/weather?q=Draper&units=imperial&appid=57299b6e5232263fdc608992c0a822f2";
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
