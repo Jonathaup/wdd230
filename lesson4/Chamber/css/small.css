@@ -687,3 +687,46 @@ form fieldset {
     background: linear-gradient(0.40turn, #f9d4d5, #faedd9, #d4fae6, #d5defb);
 }
 
+.contact {
+    display: grid;
+}
+.contact img {
+    border: 10px double black;
+    grid-column: 2/3;
+    object-fit: cover;
+    height: 100%;
+}
+
+.cham-info {
+    grid-column: 1/2;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 10px double black;
+}
+
+.mem-info {
+    margin: 0 auto;
+    max-width: 45rem; 
+    font-weight: 600;  
+}
+
+.ct {
+    text-align: center;
+    padding: 30px;
+    line-height: 2rem;
+}
+
+.mem-info h2 {
+    padding: 40px 0 30px;
+    text-align: center;
+}
+
+.band {
+    background: linear-gradient(to right, white, #cbe709, #c54f54);
+    padding: 20px;
+    text-align: center;
+    line-height: 2rem; 
+    margin: 50px 0 30px;
+}
+
+

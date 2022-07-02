@@ -130,5 +130,10 @@
         padding-right: 30px;
         line-height: 1.2rem;
     }
+    /*--------Contact Page--------*/
+    .contact {
+    grid-template-columns: 30% 1fr;
+    gap: 30px;
+     }
 
-    }
+}

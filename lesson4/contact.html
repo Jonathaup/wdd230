@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=head<, initial-scale=1.0">
+        <title>Hazlo Web</title>
+        <meta name="description" content="Homepage"/>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Fanwood+Text&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="Chamber/css/small.css" />
+        <link rel="stylesheet" href="Chamber/css/medium.css" />
+        <link rel="stylesheet" href="Chamber/css/large.css" />
+    
+      </head>
+  <body>
+    <header>
+        <picture id="toplogo">
+          <img src="Chamber/images/thumbnails_Logo100.webp" alt="HazloWeb Logo" />
+        </picture>
+        <h1>
+          HazloWeb<span id="smtitle"><br />Chamber of Commerce</span>
+        </h1>
+        <div class="social">
+          <a href="https://www.facebook.com/" id="facebook" target="_blank"><img src="Chamber/images/face.svg" alt="Logofacebook" width="35"></a>
+          <a href="https://www.linkedin.com/"  target="_blank"><img src="Chamber/images/liicon.svg" alt="Logolinkedin" width="35" ></a>
+        </div>
+        <button id="menuButton"><span>&#9776;</span><span>X</span></button>
+        <nav>
+          <ul id="mainNav">
+            <li>
+              <a href="index.html" title="HazloWeb Home Page">Home</a>
+            </li>
+            <li>
+              <a href="discover.html" title="Demographics of HazloWeb"
+                >Discover</a
+              >
+            </li>
+            <li>
+              <a href="directory.html" title="Business Directory" class="active"
+                >Directory</a
+              >
+            </li>
+            <li>
+              <a href="join.html" title="Join the HazloWeb Chamber">Join</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div id="currentDate">
+      <span>Date</span>
+    </div>
+    <aside id="banner">
+      "Come join us for the chamber meet and greet Wednesday at 7:00 p.m." - - -
+      - - &nbsp;<button id="close">&#10060;</button>
+    </aside>
+    <main>
+      <h2 class="ct">Contact the HazloWeb Chamber of Commerce</h2>
+      <div class="contact">
+        <div class="cham-info">
+          <p><strong>OUR LOCATION</strong></p>
+          <hr />
+          <p>HazloWeb Chamber of Commerce</p>
+          <p>835 S Redwood Rd</p>
+          <p>Draper, UT 84020</p>
+          <p>Monday - Friday (9am - 5pm)</p>
+          <br />
+          <p><strong>TEAM CONTACTS</strong></p>
+          <hr />
+          <p>Carlos Trujillo</p>
+          <p>President</p>
+          <p>(382) 888-4050</p>
+          <br />
+          <p>Gabriela Snow</p>
+          <p>Project Manager</p>
+          <p>(383) 232-5225</p>
+          <br />
+          <p>Anggi Rabanal</p>
+          <p>Operations Assistant</p>
+          <p>(385) 203-5626</p>
+          <br />
+          <p>Don Delamare</p>
+          <p>Project Manager</p>
+          <p>(382) 222-5829</p>
+        </div>
+        <div id="con-img">
+          <picture>
+            <source
+              srcset="Chamber/images/Landscape.jpg"
+              media="(min-width: 1500px)"
+            />
+            <img src="Chamber/images/Landscape.jpg" alt="HazloWeb Castle" />
+          </picture>
+        </div>
+      </div>
+      <h2 class="band">Chamber Contact Form</h2>
+      <form class="mem-info" action="thankyou.html">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label class="sec1">
+            Full Name*<input type="text" name="fullname" required />
+          </label>
+          <label class="sec1">
+            Email*<input type="email" name="email" required />
+          </label>
+          <label class="sec1">
+            Cell Phone Number<input type="tel" name="cell" />
+          </label>
+          <label class="sec1">
+            Company<input type="text" name="company" />
+          </label>
+          <label class="sec1">
+            Business Address<input type="text" name="address" />
+          </label>
+          <br />
+          <p>Are You A Member of the HazloWeb Chamber?</p>
+          <label><input type="checkbox" name="member" value="Yes" />Yes</label
+          ><br />
+          <label><input type="checkbox" name="non-member" value="No" />No</label
+          ><br />
+          <label class="sec1">
+            Comments/Questions
+            <textarea name="business description" maxlength="300"></textarea>
+          </label>
+          <button class="send sndc" type="submit" value="submit">
+            Send Comment or Question
+          </button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+        <section class="lower">
+          <div>
+            <img
+              id="bottom-logo"
+              src="Chamber/images/thumbnails_Logo100.webp"
+              alt="HazloWeb Logo"
+            />
+          </div>
+          <div class="address">
+              <h3>HazloWeb</h3><br>
+              <p>Draper, UT-84020</p>
+        </div>
+        <div class="web">
+              <p>TheHazloweb.com <br> Phone:+1-###-###-#### </p>
+              <a href="https://www.google.com/maps/place/Draper,+UT/@40.4934654,-111.8874854,13z/data=!3m1!4b1!4m5!3m4!1s0x8752805153135f0f:0xea3aa3af26cf70b2!8m2!3d40.5246711!4d-111.8638226" target="_blank"><img src="Chamber/images/googlemaps.5.webp" alt="Logo_Map" width = "20"> Location</a>
+        </div>
+        </section>
+        <p id="lastline">
+          &copy; <span id="currentYear"></span> HazloWeb | Jonathan Uribe | WDD 230 Project | Last Updated: <span id="modDate"></span>
+        </p>
+      </footer>
+    <script src="Chamber/js/script.js"></script>
+  </body>
+</html>
