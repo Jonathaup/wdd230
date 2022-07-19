@@ -1,0 +1,65 @@
+@media (min-width: 43rem) {
+
+    #temple-grid {
+        grid-column: 1/5;
+        /* display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(2, 1fr)); */
+        justify-content: center;
+        max-width: 950px;
+        margin: 0.2rem auto;
+        
+    }
+
+    .templeCards {
+        max-width: 350px;
+        /* flex-wrap: wrap; */
+    }
+
+    .footAddress {
+        grid-column: 4;
+        grid-row: 1;
+        line-height: 1.5rem;
+        margin: 1rem 0;
+        color: #584e50;
+    
+    }
+
+    .content {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+        margin: 0 auto;
+    }
+    
+    .footerList {
+        margin: 2rem auto;
+        
+    }
+
+    .serviceCards {
+        grid-column: 1/5;
+    }
+
+    #image-grid {
+        display: flex;
+    }
+
+     h1 {
+        font-size: 26px;
+     }
+    
+    .underline {
+         width: 68px;
+     }
+    
+     #form_button {
+         padding: 15px 25px;
+     }
+
+     input[type='text'],
+     [type='email'],
+    select,
+     textarea {
+       font-size: 0.875em;
+     }
+}

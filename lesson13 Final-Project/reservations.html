@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=head<, initial-scale=1.0">
+    <title>Temple Inn And Suites</title>
+    <meta name="description" content="Homepage"/>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Fanwood+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <picture class="logo"><img src="images/Logo.PNG" width="200" alt="temple inn and suites logo" ></picture>
+            <div class="title">
+                
+                <a href="index.html">
+                    <h1 id="title-big">Temples</h1>
+                </a>
+                <a href="index.html">
+                    <h3 id="title-small">Inn and Suites</h3>
+                </a>
+            </div>
+        </div>
+        <div class="social">
+            <a class="socMedia" href="https://facebook.com/" target="_blank"><img src="images/facebook_pink_small.png" width="50" alt="facebook"></a>
+            <a class="socMedia" href="https://instagram.com/" target="_blank"><img src="images/instagram_pink_small.png" width="50" alt="instagram"></a>
+            <a class="socMedia" href="https://twitter.com/" target="_blank"><img src="images/twitter_pink_small.png" width="50"alt="twitter"></a>
+            <nav class="nav responsive">           
+             <button id="hambtn"><span>&#9776;</span></button>
+                <ul id="primNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="term">
+                <div class="date"></div>
+                <aside></aside>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="pageIntro2">
+            <h1>Make Your Reservation</h1>
+            <p id="page-info">Complete the following form and your reservation request to stay with us. <br>(You will receive a confirmation in your email in a few minutes)</p>
+       </div>
+        <form action="#" method="get/post" autocomplete="off" id="contact-form">
+            <p class="col-md-1">First Name <input type="text" size="25" maxlength="99" required></p>
+            <p class="col-md-1">Last Name <input type="text" size="25" maxlength="99" required></p>
+            <p class="col-md-2">Address <input type="text" size="20" maxlength="99" required></p>
+            <p class="col-md-2">Home State/Country <input placeholder="State/Country" type="text" size="25" maxlength="99" required></p>
+            <p class="col-md-4">Email<input placeholder="email@email.com" type="email" size="30" maxlength="99" required></p>
+            <p class="col-md-5">Telephone <input placeholder="000-000-0000" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" maxlength="99" required></p>
+            <div class="col-md-6" id="destination">
+                <p>Select Your Destination
+                    <select name="choices" size="1">
+                        <option value="choose">------------Select-------------</option>
+                        <option value="winterquarters">Winter Quarters, Nebraska</option>
+                        <option value="logan">Logan, Utah</option>
+                        <option value="hamilton">Hamilton, New Zealand</option>
+                        <option value="idahofalls">Idaho Falls, Idaho</option>
+                        <option value="melbourne">Melbourne, Australia</option>
+                        <option value="rome">Rome, Italy</option>
+                        <option value="sandiego">San Diego, California</option>
+                        <option value="rexburg">Rexburg, Idaho</option>
+                    </select>
+                </p>
+            </div>
+            
+            
+            <div class="checks">
+                </div>
+                    <input class="form-control" type="date" required>
+                    <span class="form-label">Check In</span>
+                <div>
+                <div>
+                    <input class="form-control" type="date" required>
+                    <span class="form-label">Check Out</span>
+                </div>
+            </div>
+            <br>
+            <div class="numbers">
+            <div>
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" selected hidden># of Rooms</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    
+                    <span class="form-label">Rooms</span>
+                </div>
+            </div>
+            <div class="col-med-8">
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" selected hidden># of Adults</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <span class="form-label">Adults</span>
+                </div>
+            </div>
+            <div class="col-med-8">
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" selected hidden># of Children</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <span class="form-label">Children</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group comment-container">
+            <div class="comment">
+                <label class="form-description" >Comments</label>
+                <textarea name="textarea" id="content" placeholder="Please state comments or any special needs."></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="form-group" id="bookbtn">
+            <input class="formbtn" type="submit" value="Book Now">
+            
+        </div>
+           
+        </form>
+
+
+    </main>
+    <div class="band"></div>
+    <footer>
+        <div class="content">
+        <div class="foot1">
+            <div class="footerList">
+                <ul class="footerNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>    
+            </div>
+        </div>
+        <div class="footAddress">
+            <div class="address">
+                <h3>
+                    <b>Temple Inn and Suites</b>
+                </h3>
+                <p>
+                    4800 Montgomery Ln #300 <br>Bethesda, MD 20814
+                </p>
+                <br>
+                <p>Info@templeinn.com <br>(999)-999-9999</p>
+            </div>
+        </div>
+        <div class="socialFoot">
+            <a class="footsocMedia" href="https://facebook.com/" target="_blank" ><img src="images/facebook_pink_small.png" width="35"
+                    alt="facebook"></a>
+            <a class="footsocMedia" href="https://instagram.com/" target="_blank"><img src="images/instagram_pink_small.png" width="35"
+                    alt="instagram"></a>
+            <a class="footsocMedia" href="https://twitter.com/" target="_blank"><img src="images/twitter_pink_small.png" width="35"
+                    alt="twitter"></a>
+        </div>
+        <div class="assignment">
+            <p class="assignmentLine">&copy;<span id="year"></span> Temple Inn and Suites | <strong>Jonathan Uribe</strong> | WDD 230 Final Project | <span id="currentdate"></span></p>
+            <script id="last" src="js/lastupdate.js"></script>
+        </div>
+        <script src="js/main.js"></script>
+    </div>
+    </footer>
+</body>
+
+</html>
