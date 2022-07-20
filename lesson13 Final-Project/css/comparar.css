@@ -1,0 +1,1022 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+body {
+    font-family: 'Gentium Book Plus', serif;
+    background-color: #E5E6E4;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: 'Lavishly Yours', cursive;
+}
+
+p {
+    text-align: center;
+    grid-column: 1/5;
+}
+
+a {
+    text-decoration: none;
+    color: #584e50;
+}
+
+/* **************
+     Buttons
+****************/
+
+button {
+    margin: 1rem auto;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #E5E6E4;
+    border: none;
+}
+
+button:hover {
+    letter-spacing: 2px;
+    border-top: 1px solid #847577;
+    border-bottom: 1px solid #847577;
+    transition: all 1s ease 0.4s;
+    opacity: 0.75;
+}
+
+button:hover::before, button:hover::after {
+    transition: all 1s ease-in-out 0.4s;
+}
+
+a button {
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    /* position: absolute; */
+    transform: scale(1, 1);
+    /* transform: translate(20px); */
+
+}
+
+/* **************
+     Header
+****************/
+
+header {
+    background-color: #A6A2A2;
+    max-width: 100%;
+    /* padding-top: 1.7rem; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
+    color: #847577;
+}
+
+.header-logo {
+    display: flex;
+    grid-column: 2;
+    margin: 2rem 0 0 0;
+}
+
+.logo {
+    margin-top: 2.4rem;
+    margin-right: 1.2rem;
+}
+
+.title {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    grid-column: 1/3;
+    /* background: linear-gradient(0.25turn, #847577, #A6A2A2, #F8EDEB, #A6A2A2, #847577, #847577, #A6A2A2, #F8EDEB, #A6A2A2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+   
+}
+
+#title-big, #title-small {
+    font-family: 'Lavishly Yours', cursive;
+    font-weight: 100;
+    line-height: 1rem;
+    color: #e0d4d2;
+    text-shadow: 5px 2px 3px #847577;
+
+}
+
+#title-big {
+    margin-left: 1rem;
+    font-size: 5rem;
+   
+}
+
+.term {
+    font-size: 1.3rem;
+    text-align: center;
+    background: linear-gradient(0.25turn, #847577, #A6A2A2, #F8EDEB, #A6A2A2, #847577);
+    grid-column: 1/5;
+}
+
+.social {
+    grid-column: 3/5;
+    margin: auto 0;
+    
+}
+
+.headerInfo {
+    grid-column: 3/5;
+    margin-top: -3rem;
+    font-size: 1.2rem;
+    
+}
+
+/* **************
+    Navigation
+****************/
+
+.nav {
+    grid-column: 1/5;
+    margin: 0 auto;
+    
+}
+
+#hambtn {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #847577;
+    margin: 2rem 4rem 0 4rem;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-align: center;
+   
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #847577;
+    line-height: 2.4rem;
+}
+
+nav ul li {
+    margin: 0.25rem 0;
+}
+
+/* **************
+    Nav Buttons
+****************/
+nav ul li a:hover {
+    color: #A6A2A2;
+    text-shadow: 2px 1px 2px #584e50;
+    letter-spacing: 2px;
+    border-top: 1px solid #847577;
+    border-bottom: 1px solid #847577;
+    transition: ease-in-out 0.4s;
+    opacity: 0.75;
+
+}
+
+nav ul li a {
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+/* **************
+      Main
+****************/
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(4, 1fr));
+}
+
+main h1 {
+    grid-column: 1/5;
+    margin: 2rem auto;
+    font-size: 3rem;
+}
+
+.band {
+    background: linear-gradient(0.25turn, #847577, #A6A2A2, #F8EDEB, #A6A2A2, #847577);
+    height: 1rem;
+
+}
+
+/* **************
+    Home Page
+****************/
+.pageIntro {
+    grid-column: 1/5;
+}
+
+.homep2 {
+    max-width: 350px;
+    grid-column: 1/5; 
+    margin:6rem auto 2rem auto;
+    
+}
+
+.hero {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 5rem 4rem 0;
+    
+}
+
+.heroimg {
+    position: absolute;
+    border: 1px solid #584e50;
+    padding: 1rem 1rem 0.8rem 1rem;
+}
+
+.travel {
+    position: relative;
+    max-width: 300px;
+    padding: 1rem;
+    margin: 10rem 0 0 55rem;
+    background-color: #e0d4d2;
+    border: 1rem solid #E5E6E4;
+    box-shadow: 3px 7px 3px #584e50;
+
+}
+
+.travel h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: right;
+}
+
+.travel p {
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+/**********************
+    Section Articles
+**********************/
+
+.container {
+    grid-column: 1/5;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    
+}
+
+.container article {
+    width: 350px;
+    /* border: 1px solid #584e50; */
+    margin: 1rem;
+    box-shadow: 3px 4px 4px #584e50;
+    
+}
+
+.container article img {
+    max-width: 85%;
+    /* max-height: 300px; */
+    height: 250px;
+    margin: 1rem;
+    box-shadow: 3px 4px 4px #584e50;
+    
+}
+
+.container h2 {
+    margin: 1rem;
+}
+
+.container p {
+    margin: 0 1.6rem;
+}
+
+.container button {
+    margin: 1rem;
+}
+
+iframe {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/********************
+    Temple Spotlight
+********************/
+
+#templeSpot {
+    grid-column: 3/5;
+    max-width: 650px;
+    
+}
+
+#spotlight {
+    margin: 2rem auto;
+}
+
+#spotlight article {
+    margin: 2rem;
+    border: 1px solid #584e50;
+    padding: 1rem;
+    background: linear-gradient(0.25turn,
+        #847577,
+        #A6A2A2,
+        #F8EDEB,
+        #A6A2A2,
+        #847577);
+}
+
+#spotlight h2 {
+    background-color: rgba(248, 237, 235, 0.75);
+    font-size: 1.7rem;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 3rem;
+    border-bottom: 2px solid #584e50;
+    border-top: 2px solid #584e50;
+}
+
+#spotlight img {
+    max-width: 450px;
+}
+
+
+/********************
+    Weather
+********************/
+
+.weather-section {
+    grid-column: 1/3;
+    margin: 5rem 0 0 5rem;
+    max-width: 500px;
+    
+}
+
+.weather-section h2 {
+    padding-bottom: 2rem;
+    margin: 0 8rem 1rem 8rem;
+    border-bottom: 2px solid #584e50;
+}
+
+#temp {
+    font-size: 4rem;
+}
+
+.temp-icon p {
+    font-size: 3rem;
+}
+
+figcaption {
+    font-size: 1.4rem;
+}
+
+
+.weather-section section h2 {
+    font-size: 2rem;
+}
+
+.weather-icon {
+    width: 7rem;
+}
+
+#windspeed  {
+    margin: 2rem;
+}
+
+
+
+/********************
+    Temples Page
+********************/
+
+#page-info {
+    
+    margin: 1rem auto;
+    max-width: 400px;
+}
+
+/********************
+    Temples Cards
+********************/
+
+/* #temple-grid {
+    grid-column: 1/5;
+    margin: 2rem auto;
+        
+} */
+
+
+.templeCards {
+    background:linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    border: 1px solid #584e50;
+    box-shadow: 3px 4px 4px #584e50;
+    padding: 1.3rem;
+    margin: 2rem 0.2rem;
+}
+
+.templeButtons {
+    margin: 1rem;
+    
+}
+
+.templeInfo h2 {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.all-images {
+    border: 2px solid #584e50;
+    padding: 10px;
+}
+
+/* .likeBtn {
+    font-size: 1.2rem;
+    background-color: transparent;
+} */
+
+main .cards {
+    display: flex;
+    grid-column: 1/5;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+.cards article{
+    max-width: 300px;
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    border: 1px solid #584e50;
+    box-shadow: 3px 4px 4px #584e50;
+    padding: 1.3rem;
+    margin: 2rem 0.4rem;
+}
+
+.cards img {
+    max-width: 250px;
+    max-height: 150px;
+    padding: 0.4rem;
+    border: 1px solid #584e50;
+}
+
+.cards h2 {
+    line-height: 4rem;
+}
+
+.cards h3 {
+    margin-bottom: 0.4rem;
+}
+
+.cards p {
+    margin-bottom: 1rem;
+}
+
+
+/********************
+    Services
+********************/
+
+#amenities {
+    max-width: 450px;
+    margin: 5rem 0 7rem 10rem;
+}
+
+
+#amenities-list h2, #specialized-list h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+
+#amenities-list {
+    line-height: 2rem;
+    text-align: left;
+    
+}
+
+#am-img2 {
+    max-width: 300px;
+    padding: 1rem;
+    float: right;
+    margin: 3rem 17rem 1rem 0;
+}
+
+#specialized-grid {
+    grid-column: 1/5;
+    margin: 2rem auto;
+}
+
+#specialized-list ul {
+    margin: 2rem;
+}
+
+#specialized-list ul li {
+    text-align: left;
+    margin-left: 6rem;
+}
+
+.serviceCards {
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    padding: 2rem;
+    border: 1px solid #584e50;
+}
+
+.serviceCards #image-grid {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.container img {
+    height: 250px;
+    box-shadow: 3px 7px 4px #584e50;
+    max-width: 100%;
+}
+
+#specializedBtns {
+    margin: 4rem auto; 
+    max-width: 300px;
+    grid-column: 1/5;
+}
+
+
+#specializedBtns h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #584e50;
+    margin-bottom: 3rem;
+}
+
+#specializedBtns h3 {
+    margin-bottom: 1rem;
+}
+
+#specializedBtns .special-Btn button {
+    background: rgba(132, 117, 119, 0.5);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.special-Btn {
+    margin: 3rem 2rem;
+    font-size: 1.1rem;
+}    
+
+/********************
+    Reservations
+********************/
+
+form {
+    text-align: center;
+    max-width: 850px;
+    grid-column: 2/4;
+    margin: 3rem auto 10rem auto;
+    padding: 2rem;
+    color: #584e50;
+    border: 7px double #584e50;
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#contact-form {
+    margin: 2rem auto;
+}
+
+input {
+    color: #847577;
+    border: none;
+    padding: 0.2rem;
+    border-bottom: 1px solid #584e50;
+    background-color: transparent;
+    margin-left: 1rem;
+}
+.comments textarea::placeholder,
+form p input::placeholder {
+    color: #A6A2A2;
+}
+
+select {
+    color: #847577;
+    margin: 1rem 0;
+}
+
+form p {
+    margin: 1rem;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-label {
+    margin-right: 1rem;
+}
+
+.form-control {
+    border: none;
+    background-color: #cac6c6;
+}
+
+#destination {
+    margin: 0 10rem;
+}
+
+#destination select {
+    background-color: #cac6c6;
+}
+
+.checks {
+    display: flex;
+    margin: 1rem 4rem;
+}
+
+.numbers {
+    display: flex;
+    margin: 1rem 8rem;
+}
+
+.comment-container {
+    display: grid;
+    margin: 1rem auto;
+    max-width: 850px;
+    height: 80px;
+}
+
+.comment {
+    float: left;
+    width: 700px;
+    height: 200px;
+}
+
+
+.comment textarea {
+    color: #847577;
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+.form-description {
+    color: #584e50;
+}
+
+#content {
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    resize: none;
+    
+}
+
+/* **************
+    Form Buttons
+****************/
+
+.formbtn  {
+    float: left;
+    margin: 2rem auto;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0.8rem;
+    background-color: #A6A2A2;
+    color: #E5E6E4;
+    border: none;
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+#bookbtn {
+    margin: 1rem auto;
+}
+
+.formbtn:hover {
+    letter-spacing: 4px;
+    border-top: 2px solid #584e50;
+    border-bottom: 2px solid #584e50;
+    transition: all 1s ease 0.6s;
+    opacity: 0.75;
+}
+
+.formbtn:hover::before,
+.formbtn:hover::after {
+    transition: all 0.6s ease-in-out 0.6s;
+}
+
+/********************
+    Reception
+********************/
+
+.lg-container {
+    grid-column: 1/5;
+    margin: 2rem auto;
+    
+}
+
+.lg-container img {
+    margin: 0 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    border: 1px solid #584e50;
+}
+
+#resbtn {
+    grid-column: 1/5;
+    margin: 3rem auto;
+    font-size: 1.1rem;
+    
+}
+
+#resbtn button {
+    background-color: #A6A2A2;
+    border-radius: 20px;
+    line-height: auto;
+}
+
+#recinfo {
+    max-width: 550px;
+    grid-column: 1/5;
+    margin: 2rem auto;
+}
+
+#recinfo .pageIntro {
+    margin-bottom: 2rem;
+}
+
+#recinfo .pageIntro h2 {
+    margin-bottom: 1rem;
+}
+
+#reclist {
+    text-decoration: dotted;
+    margin-bottom: 1.4rem;
+}
+
+#reclist li{
+    text-align: left;
+    list-style-type: disc;
+    line-height: 1.6rem;
+}
+
+/* **************
+    Missionary
+****************/
+
+.missimg {
+    grid-column: 1/5;
+    margin: 1rem auto;    
+}
+
+.missimg picture {
+    margin: 0 12px;
+}
+
+.missimg img {
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+}
+
+#missInfo {
+    background: linear-gradient(to right,
+        rgba(132, 117, 119, 0.5),
+        rgba(166, 162, 162, 0.32),
+        rgba(248, 237, 235, 0.37),
+        rgba(166, 162, 162, 0.42),
+        rgba(132, 117, 119, 0.5));
+    grid-column: 1/5;
+    margin: 2rem auto;
+    border: 1px solid #584e50;
+    border-radius: 20px;
+}
+
+#missInfo .pageIntro, #missInfo p {
+    margin: 2rem 1rem;
+}
+
+#missInfo ul li {
+    list-style-type: none;
+    line-height: 2rem;
+    padding: 0 2rem;
+}
+
+
+
+/* **************
+    Resources
+****************/
+
+.imageResource {
+    max-width: 70%;
+    line-height: 1.8rem;
+    text-align: start;
+    margin: 2rem auto;
+
+}
+
+.imageResource h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.imageResource h4 {
+    margin-bottom: 2rem;
+}
+
+.imageResource, ul li {
+    list-style-type: none;
+}
+
+/* **************
+      Contact
+****************/
+
+textarea {
+    overflow: auto;
+}
+
+#container {
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+}
+
+
+.underline {
+    border-bottom: solid 2px #584e50;
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #584e50;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #584e50;
+}
+
+:-moz-placeholder {
+    color: #584e50;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #584e50;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #584e50;
+}
+
+.submit .formbtn {
+    margin-left: 5rem;
+}
+
+
+
+/* **************
+      Footer
+****************/
+
+footer {
+    background-color: #A6A2A2;
+    /* max-width: 1200px; */
+}
+
+.content {
+    max-width: 1200px;
+    display: block;
+    
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #847577;
+
+}
+
+.foot1 {
+    margin: 1rem 4rem;
+    grid-column: 1;
+    display: flex;
+    line-height: 1.3rem;
+    margin: auto;
+}
+
+.footerList {
+    margin-right: 5rem;
+    margin: 1rem auto;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footAddress {
+    grid-column: 4;
+    grid-row: 1;
+    line-height: 1.5rem;
+    margin: 2rem auto;
+    color: #584e50;
+
+}
+
+.socialFoot {
+    grid-column: 4;
+    grid-row: 2;
+    margin-right: 2rem;
+}
+
+/* .address {
+    grid-column: 3;
+} */
+
+.assignment {
+    grid-column: 1/5;
+    grid-row: 3;
+    text-align: center;
+    color: #584e50;
+
+}
+

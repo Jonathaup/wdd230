@@ -6,6 +6,7 @@
 }
 
 body {
+    max-width: 1900px; 
     font-family: 'Gentium Book Plus', serif;
     background-color: whitesmoke;
     text-align: center;
@@ -26,7 +27,7 @@ a {
     color: #584e50;
 }
 
-img{
+.heroimg img{
     max-width: 1000px;
 }
 
@@ -73,7 +74,7 @@ a button {
 
 header {
     background-color: #ffa142;
-    min-width: 1200px;
+    min-width: 1300px;
     /* padding-top: 1.7rem; */
     margin: 0 auto;
     display: grid;
@@ -112,8 +113,6 @@ header {
     line-height: 1rem;
     color: white;
     text-shadow: 5px 2px 3px gray;
-    margin-left: 120px;
-
 
 }
 #title-small {
@@ -122,10 +121,10 @@ header {
 }
 #title-big {
     font-size: 5rem;
-    margin-left: 120px;
 }
 
 .term {
+    min-width: 1100px;
     font-size: 1.3rem;
     text-align: center;
     background: linear-gradient(0.25turn,white, #ffa142 ,gray);
@@ -227,19 +226,38 @@ main h1 {
 }
 
 .band {
+    min-width: 1300px;
     background: linear-gradient(0.25turn,white, #ffa142 ,gray);
     height: 1rem;
     border:2px solid white;
-    padding-bottom:15px;
     margin-top:20px;
-
-
 }
 
 /* **************
     Home Page
 ****************/
 .pageIntro1, .pageIntro2 {
+    width:1170px;
+    grid-column: 1/5;
+    border: 5px dotted  black;
+    padding-bottom: 20px;
+    margin-left: 80px;
+}
+.pageIntro5{
+    width:1100px;
+    grid-column: 1/5;
+    border: 5px dotted  black;
+    padding-bottom: 20px;
+    margin-left: 80px;
+}
+.pageIntro3{
+    width:1100px;
+    grid-column: 1/5;
+    border: 5px dotted  black;
+    padding-bottom: 20px;
+    margin-left: 80px;
+}
+.pageIntro4{
     grid-column: 1/5;
     border: 5px dotted  black;
     padding-bottom: 20px;
@@ -249,7 +267,7 @@ main h1 {
     margin: auto auto auto 300px;
     grid-column: 1/5;
 }
-.pageIntro h1, .pageIntro1 h1 {
+.pageIntro h1, .pageIntro1 h1, .pageIntro3 h1, .pageIntro4 h1,.pageIntro5 h1{
     font-size:60px;
     font-family: 'Parisienne', cursive;
 }    
@@ -266,21 +284,24 @@ main h1 {
     display: flex;
     justify-content: center;
     margin: 4rem 5rem 4rem 0;
+    margin-left: 90px;
+
     
 }
 
 .heroimg {
     position: absolute;
-    padding: 1rem 1rem 0.8rem 1rem;
     box-shadow: 3px 7px 3px #584e50;
+    border: 10px solid  gray;
+    background-color: gray;
 
 }
 
 .travel {
     position: relative;
-    max-width: 300px;
+    width: 300px;
     padding: 1rem;
-    margin: 10rem 0 0 55rem;
+    margin: 10rem 0 0 820px;
     background-color: white;
     border:15px solid #ffa142;
     box-shadow: 3px 7px 3px #584e50;
@@ -328,10 +349,7 @@ main h1 {
     box-shadow: 3px 4px 4px #584e50;
     object-fit: cover;
     border: 10px solid  gray;
-
-
-
-    
+  
 }
 
 .container h2 {
@@ -348,13 +366,20 @@ main h1 {
     border-radius:15%;
 }
 
+iframe {
+    max-width: 100px;
+    max-height: 100px;
+}
+
 /********************
     Temple Spotlight
 ********************/
 
+
+
 #spotlight {
     grid-column: 1/3;
-    margin: 2rem auto;
+    margin-left: -20px;
     
 
 }
@@ -378,13 +403,15 @@ main h1 {
     margin-top: 3rem;
     margin-left: 3rem;
 }
+
 /********************
     Weather
 ********************/
-
+div.weather-section{
+    margin-left:450px; ;
+}
 .weather-section {
     grid-column: 1/3;
-    margin: 8rem 0 0 5rem;
     max-width: 500px;
     margin: auto auto auto 480px;
     border: 10px solid #ffa142;
@@ -480,7 +507,7 @@ main .cards {
     display: flex;
     grid-column: 1/5;
     margin: 0 auto;
-    flex-wrap: wrap;
+    padding:50px;
 
 }
 
@@ -493,8 +520,8 @@ main .cards {
 }
 
 .cards img {
-    position:sticky;
     max-width: 250px;
+    padding: 0.4rem;
     object-fit: cover;
     border: 15px ridge #584e50}
 
@@ -516,7 +543,8 @@ main .cards {
 
 #amenities {
     max-width: 450px;
-    margin: 5rem 0 7rem 10rem;
+    margin: 5rem 0 7rem 450px;
+    background-color: #ffa142;
 }
 
 
@@ -533,11 +561,10 @@ main .cards {
     
 }
 
-#am-img2 {
-    max-width: 300px;
-    padding: 1rem;
-    float: right;
-    margin: 3rem 17rem 1rem 0;
+.fotos-images {
+    max-width: 400px;
+    object-fit: cover;
+    border: 15px ridge #584e50
 }
 
 #specialized-grid {
@@ -555,9 +582,11 @@ main .cards {
 }
 
 .serviceCards {
-    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
+    background-color: #ffa142;
     padding: 2rem;
     border: 1px solid #584e50;
+    margin-left: 50px;
+    width: 1200px;
 }
 
 .serviceCards #image-grid {
@@ -574,23 +603,32 @@ main .cards {
 }
 
 #specializedBtns {
-    margin: 4rem auto; 
+    margin: 4rem auto auto 520px; 
     max-width: 300px;
     grid-column: 1/5;
+    border: 10px solid #ffa142;
+    
+}
+#specializedBtns1 {
+    margin: 4rem auto auto 480px; 
+    width: 300px;
+    grid-column: 1/5;
+    border: 10px solid #ffa142;
+    
 }
 
 
-#specializedBtns h2 {
+#specializedBtns h2, #specializedBtns1 h2  {
     font-size: 2rem;
     border-bottom: 1px solid #584e50;
     margin-bottom: 3rem;
 }
 
-#specializedBtns h3 {
+#specializedBtns h3, #specializedBtns1 h3 {
     margin-bottom: 1rem;
 }
 
-#specializedBtns .special-Btn button {
+#specializedBtns .special-Btn button, #specializedBtns1 .special-Btn button {
     background: rgba(132, 117, 119, 0.5);
     border-radius: 20px;
     margin-bottom: 2rem;
@@ -604,12 +642,27 @@ main .cards {
 /********************
     Reservations
 ********************/
+.contacto{
+    text-align: center;
+    width: 850px;
+    height: 600px;
+    grid-column: 2/4;
+    margin: 200px auto 10rem 200px;
+    padding: 2rem;
+    color: black;
+    border: 7px double #ffa142;
+    background: linear-gradient(to right,gray, #ffa142,gray);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 
-form {
+}
+.reserva {
     text-align: center;
     max-width: 850px;
     grid-column: 2/4;
-    margin: 3rem auto 10rem auto;
+    margin: 3rem auto 10rem 120px;
     padding: 2rem;
     color: black;
     border: 7px double #ffa142;
@@ -714,7 +767,7 @@ form p {
     Form Buttons
 ****************/
 
-.formbtn  {
+.formbtn   {
     float: left;
     margin: 2rem auto;
     cursor: pointer;
@@ -752,7 +805,16 @@ form p {
 /********************
     Reception
 ********************/
+.pageIntro3 p {
+    margin-bottom:30px ;
+}
+.pageIntro3 h2{
+    font-family: 'Parisienne', cursive;
+    margin-bottom:30px ;
+    font-size:3rem;
 
+
+}
 .lg-container {
     grid-column: 1/5;
     margin: 2rem auto;
@@ -761,10 +823,12 @@ form p {
 
 .lg-container img {
     margin: 0 1rem;
-    padding: 1rem;
-    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
     border: 1px solid #584e50;
+    max-width: 600px;
+    border: 15px ridge gray ;
 }
+
+
 
 #resbtn {
     grid-column: 1/5;
@@ -783,6 +847,10 @@ form p {
     max-width: 550px;
     grid-column: 1/5;
     margin: 2rem auto;
+    border: 15px solid #ffa142 ;
+}
+p#parrafo{
+    text-align: left;
 }
 
 #recinfo .pageIntro {
@@ -807,7 +875,12 @@ form p {
 /* **************
     Missionary
 ****************/
+.cuartos img{
+    max-width:600px;
+    border: 15px ridge #584e50;
 
+
+}
 .missimg {
     grid-column: 1/5;
     margin: 1rem auto;    
@@ -817,18 +890,10 @@ form p {
     margin: 0 12px;
 }
 
-.missimg img {
-    padding: 1rem;
-    background: linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
-}
+
 
 #missInfo {
-    background: linear-gradient(to right,
-        rgba(132, 117, 119, 0.5),
-        rgba(166, 162, 162, 0.32),
-        rgba(248, 237, 235, 0.37),
-        rgba(166, 162, 162, 0.42),
-        rgba(132, 117, 119, 0.5));
+    background: linear-gradient(to right,gray, #ffa142,gray);
     grid-column: 1/5;
     margin: 2rem auto;
     border: 1px solid #584e50;
@@ -983,7 +1048,7 @@ textarea {
 
 footer {
     background-color: #ffa142;
-    min-width: 1200px; 
+    min-width: 1300px;
 }
 
 .content {
