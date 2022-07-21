@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#temp');
 const weatherIcon = document.querySelector('.weather-icon');
 const windSpeed = document.querySelector('#speed');
 const windchill = document.querySelector("#chill");
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#clima');
 
 const latitude = 38.981
 const longitude = -77.100
