@@ -1,35 +1,230 @@
 @media only screen and (min-width: 1000px){
 
+    
+            .content div.foot1 {
+                font-size:25px;
+                grid-column: 1;
+                margin: 3rem auto auto -10rem;
+
+
+            }
+            .content div.socialFoot {
+                margin: 9rem auto auto 14rem;
+                grid-row:1;
+            }
+
+            div .socialFoot img{
+                width: 70px;
+
+            }
+
+            .content .assignment {
+                grid-column: 2;
+                grid-row:3;
+                margin: auto auto 1rem 4rem ;
+            }
+
+            .content div.footAddress {
+                font-size:20px;
+                grid-column: 4;
+                grid-row:1;
+                margin: auto -14rem auto auto ;
+
+            }
+
+            header {
+                display:flex;
+                flex-direction: row;
+                gap:1rem;
+            }
+            .social a.socMedia img{
+                width: 70px;
+            }
+
+            header div.social{
+                display:flex;
+                flex-direction: row;
+                gap:0.5rem;
+                margin-left: 2rem;
+
+            }
+            a #title-big{
+                font-size: 80px;
+                margin:auto auto 1.5rem -1rem;
+
+            }
+            a #title-small{
+                font-size: 50px;
+                margin:auto auto 1.5rem 3rem;
+            }
+            .menu{
+                margin: 7.1rem 6rem auto auto;
+            }
+            main div.travel{
+                margin-left:49rem;
+                margin-top:4rem
+            }
+            .homep2 {
+                margin:10rem auto 2rem auto;
+                
+            }
+            
+        @media only screen and (min-width: 1200px){
+
+            .content div.foot1 {
+                font-size:25px;
+                grid-column: 1;
+                margin: 3rem auto auto -18rem;
+
+
+            }
+            .content div.socialFoot {
+                margin: 5rem auto auto 15rem;
+                grid-row:1;
+                
+            }
+
+            div .socialFoot img{
+                width: 90px;
+
+            }
+
+            .content .assignment {
+                font-size: 20px;
+                grid-column: 2;
+                grid-row:3;
+                margin: auto auto 1rem 4rem ;
+            }
+
+            .content div.footAddress {
+                font-size:20px;
+                grid-column: 4;
+                grid-row:1;
+                margin: auto -16rem auto auto ;
+
+            }
+
+            header {
+                display:flex;
+                flex-direction: row;
+                gap:1rem;
+            }
+            .social a.socMedia img{
+                width: 70px;
+            }
+
+            header div.social{
+                display:flex;
+                flex-direction: row;
+                gap:3rem;
+                margin-left: 5rem;
+
+            }
+            a #title-big{
+                font-size: 80px;
+                margin:auto auto 1.5rem -1rem;
+
+            }
+            a #title-small{
+                font-size: 50px;
+                margin:auto auto 1.5rem 3rem;
+            }
+            .menu{
+                margin: 7.1rem auto auto auto;
+            }
+            
+            .hero picture.heroimg{
+                width: 75%;
+            }
+
+            main div.travel{
+                margin-left:62rem;
+                margin-top:4rem
+            }
+
+            .homep2 {
+                margin:10rem auto 2rem auto;
+                
+            }
+
+            .lg-container picture#img1,.lg-container picture#img2{
+                width:100%;
+                object-fit:cover;
+            }
+            .lg-container picture#img3{
+                width:50%;
+                object-fit:cover;
+                margin-top: -1rem;
+
+            }
+            div#recinfo {
+                width: 40%;
+                margin: -32rem 2rem auto auto;
+            }
+            div#resbtn {
+                padding-top: 2rem;
+            }
+            div.main-divs{
+                display:flex;
+
+
+
+            }
+
+            #amenities.templeCards {
+                grid-column: 1;
+                margin-left:11rem;
+            }
+            main div#specializedBtns {
+                margin-right: 8rem;
+            }
+            .container img#foto1{
+                margin-left: 0;
+            }
+            .container img#foto2{
+                margin: 0;
+            }
+            .container img#foto3{
+                margin: 0;
+            }
+            .container img#foto4{
+                margin: 0;
+            }
+
+            .serviceCards div#image-grid{
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding-bottom:5rem;
+
+            }
+
+            .container img{
+                width:100%;
+            }
+
+            div.pageIntro1{
+                margin-bottom: 2rem;
+            }
+            main div.cards {
+                display:flex;
+                flex-wrap:nowrap;
+            }
+            .cards article img{
+                width: 100%;
+            }
+        }
+    }
+
+
+
+
+
+
+
 
   
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-}

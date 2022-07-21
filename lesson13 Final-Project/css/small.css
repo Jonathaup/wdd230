@@ -245,6 +245,7 @@
     }
 
     .heroimg {
+        max-width: 868px;
         position: absolute;
         box-shadow: 3px 7px 3px #584e50;
         border: 10px solid  gray;
@@ -354,13 +355,15 @@
 
 
     #spotlight article {
-        margin: 2rem;
+        max-width: 750px;
+        margin: 1rem auto 1rem auto;
         border: 10px solid #ffa142 ;
-        padding: 1rem;
+        padding-bottom: 1.5rem;
 
         
     }
     #spotlight article img{
+        margin: auto;
         width:100%;
         border: 10px ridge #584e50;
     }
@@ -382,12 +385,15 @@
         margin:auto;
         border: 10px solid #ffa142;
         background-color: white;
+        max-width:400px;
+
     }
 
     .weather-section h2 {
         padding-bottom: 2rem;
         margin: 1.5rem auto 1rem auto;
         border-bottom: 4px solid #ffa142;
+
         
     }
 
@@ -603,6 +609,7 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        max-width: 780px;
     }
 
     #contact-form {
