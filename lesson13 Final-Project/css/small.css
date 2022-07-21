@@ -886,7 +886,7 @@
 
 
 
-    #missInfo {
+    #missInfo,#missInfo1 {
         background: linear-gradient(to right,gray, #ffa142,gray);
         grid-column: 1/5;
         margin: 2rem auto;
@@ -894,11 +894,11 @@
         border-radius: 20px;
     }
 
-    #missInfo .pageIntro, #missInfo p {
+    #missInfo .pageIntro, #missInfo p,#missInfo1 .pageIntro,#missInfo1 p {
         margin: 2rem 1rem;
     }
 
-    #missInfo ul li {
+    #missInfo ul li,#missInfo1 ul li {
         list-style-type: none;
         line-height: 2rem;
         padding: 0 2rem;
