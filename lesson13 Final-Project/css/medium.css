@@ -78,7 +78,7 @@
         width:99%;
     }
     picture.heroimg{
-        padding:none;
+        padding:0;
         width: 80%;
     }
     article.hero{
@@ -156,7 +156,6 @@
         margin:-35rem 2rem 16rem auto;
         grid-column:3;
         grid-row: 2;
-        margin:none;
     }
 
     div.cards{
