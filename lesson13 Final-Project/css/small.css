@@ -7,7 +7,7 @@
     }
 
     body {
-        max-width: 1500px; 
+        max-width: 1400px; 
         font-family: 'Gentium Book Plus', serif;
         background-color: whitesmoke;
         text-align: center;
@@ -27,10 +27,6 @@
     a {
         text-decoration: none;
         color: #584e50;
-    }
-
-    .heroimg img{
-        max-width: 1000px;
     }
 
     /* **************
@@ -73,105 +69,108 @@
     ****************/
 
     header {
-        background-color: #ffa142;
-        min-width: 1300px;
-        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(auto-fill, 1fr);
-        color: white;
+        grid-template-rows:  75px 60px;
+        column-gap: 10px;
         align-items: center;
-
+        background-color: #ffa142;
+        color: white;
     }
 
     .header-logo {
         display: flex;
-        grid-column: 2;
-        padding-bottom: 5px;
+        grid-column: 1;
+    }
+    picture.logo img{
+        width: 120px;
     }
 
     .logo {
-        margin-top: 2.4rem;
-        margin-right: 1.2rem;
+        display: flex;
+        margin-top: 55px;
         border: 2px solid #847577;
     }
-    .logo img {
-        height: 100%;
-    }
     .title {
-        font-size: 2.4rem;
-        margin-top: 1rem;
-        padding-bottom: 1rem;
-        grid-column: 1/3;
-   
+        display: grid;
+        margin-top: 55px;
+        padding-bottom: 1rem;   
+    }
+    #title-small{
+        font-size: 15px;
+        line-height: 1rem;
+
+    }
+    #title-big{
+        font-size: 28px;
     }
 
     #title-big, #title-small {
         font-family: 'Lavishly Yours', cursive;
         font-weight: 100;
-        line-height: 1rem;
         color: white;
         text-shadow: 5px 2px 3px gray;
-
-    }
-    #title-small {
-        margin-left: 300px;
-        margin-right:50px;
-    }
-    #title-big {
-        font-size: 5rem;
+        
     }
 
     .term {
-        min-width: 1100px;
         font-size: 1.3rem;
         text-align: center;
         background: linear-gradient(0.25turn,white, #ffa142 ,gray);
         grid-column: 1/5;
-        border:3px solid white
+        border:3px solid white;
+        margin-bottom:55px;
     }
-
+    a.socMedia img{
+        width: 25px;
+    }
+    .menu{
+        display: flex;
+        grid-column: 3;
+        grid-row:1;
+        margin: 3rem 0 0 3rem;
+    }
+    
     .social {
+        gap: 7px;
         display:flex;
-        margin: auto 0;
-        flex-direction: row;
-        
-    }
-
-    .headerInfo {
-        grid-column: 3/5;
-        margin-top: -3rem;
-        font-size: 1.2rem;
-        
+        grid-column:3;
+        margin: 5rem 0 0 -7rem;
+        grid-row:1;
+        flex-direction: column; 
     }
 
     /* **************
         Navigation
     ****************/
+    nav.nav.responsive #hambtn{
+        margin-left: 0.5rem;
+        background-color: gray;
 
-    .nav {
-        grid-column: 1/5;
-        margin: 0 auto;
-        
+    }
+    nav.nav.responsive span{
+            background-color: #ffa142;
+
     }
 
     #hambtn {
         font-size: 2rem;
-        background-color: transparent;
         color: #847577;
-        margin: 2rem 4rem 0 4rem;
         box-shadow: 2px 2px 2px 2px  black;
     }
 
     nav ul {
         display: none;
+        background-color: gray;
         list-style-type: none;
         font-size: 1.4rem;
-        text-align: center;
+        text-align: left;
     
     }
 
     nav ul.open {
         display: block;
+        font-size:18px;
     }
 
     nav ul a {
@@ -181,7 +180,8 @@
     }
 
     nav ul li {
-        margin: 0.25rem 0;
+        background-color:#e4892f;
+        margin: 0.1rem 0 0rem;
     }
 
     /* **************
@@ -197,7 +197,6 @@
         opacity: 0.75;
 
     }
-
     nav ul li a {
         transition: all 1s ease-in-out;
         visibility: visible;
@@ -210,10 +209,7 @@
     ****************/
 
     main {
-        margin: 0 auto;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 1fr);
     }
 
     main h1 {
@@ -223,7 +219,7 @@
     }
 
     .band {
-        min-width: 1300px;
+        width: 100%;
         background: linear-gradient(0.25turn,white, #ffa142 ,gray);
         height: 1rem;
         border:2px solid white;
@@ -233,57 +229,19 @@
     /* **************
         Home Page
     ****************/
-    .pageIntro1, .pageIntro2 {
-        width:1170px;
-        grid-column: 1/5;
+    div.pageIntro1{
         border: 5px dotted  black;
-        padding-bottom: 20px;
-        margin-left: 80px;
+        padding-bottom: 10px;
     }
-    .pageIntro5{
-        width:1100px;
-        grid-column: 1/5;
-        border: 5px dotted  black;
-        padding-bottom: 20px;
-        margin-left: 80px;
-    }
-    .pageIntro3{
-        width:1100px;
-        grid-column: 1/5;
-        border: 5px dotted  black;
-        padding-bottom: 20px;
-        margin-left: 80px;
-    }
-    .pageIntro4{
-        grid-column: 1/5;
-        border: 5px dotted  black;
-        padding-bottom: 20px;
-    }
-    
-    .pageIntro {
-        margin: auto auto auto 300px;
-        grid-column: 1/5;
-    }
-    .pageIntro h1, .pageIntro1 h1, .pageIntro3 h1, .pageIntro4 h1,.pageIntro5 h1{
-        font-size:60px;
-        font-family: 'Parisienne', cursive;
-    }    
+    article.hero{
+        padding: 1rem;
+        margin:auto;
 
-    .homep2 {
-        max-width: 350px;
-        grid-column: 1/5; 
-        margin:6rem auto 2rem auto;
-        
     }
-
     .hero {
         grid-column: 1/5;
         display: flex;
         justify-content: center;
-        margin: 4rem 5rem 4rem 0;
-        margin-left: 90px;
-
-        
     }
 
     .heroimg {
@@ -292,6 +250,27 @@
         border: 10px solid  gray;
         background-color: gray;
 
+        
+    }
+
+    picture.heroimg img{
+        padding-top:5px;
+        width: 100%;
+        
+    }
+    div.travel{
+        margin:15rem auto -4rem auto;
+    }
+    
+    .pageIntro1 h1{
+        font-size:60px;
+        font-family: 'Parisienne', cursive;
+    }    
+
+    .homep2 {
+        grid-column: 1/5; 
+        margin:6rem auto 2rem auto;
+        
     }
 
     .travel {
@@ -307,6 +286,7 @@
     }
 
     .travel h2 {
+        margin: -1rem 0 1rem 0;
         font-size: 1.8rem;
         line-height: 4rem;
         text-align: center;
@@ -324,25 +304,23 @@
 
     .container {
         grid-column: 1/5;
-        display: flex;
+        display: grid;
         margin: 1rem;
         justify-content: center;
         
     }
 
     .container article {
-        width: 350px;
-        /* border: 1px solid #584e50; */
-        margin: 1rem;
+        width: 100%;
+        margin: 1rem auto auto auto;
         box-shadow: 3px 4px 4px #584e50;
         border: 10px solid  #ffa142;
     }
 
     .container article img {
-        max-width: 85%;
-        /* max-height: 300px; */
+        max-width: 90%;
         height: 250px;
-        margin: 1rem;
+        margin-top: 1rem;
         box-shadow: 3px 4px 4px #584e50;
         object-fit: cover;
         border: 10px solid  gray;
@@ -374,12 +352,6 @@
 
 
 
-    #spotlight {
-        grid-column: 1/3;
-        margin-left: -20px;
-        
-
-    }
 
     #spotlight article {
         margin: 2rem;
@@ -389,38 +361,34 @@
         
     }
     #spotlight article img{
-        border: 15px ridge #584e50;
+        width:100%;
+        border: 10px ridge #584e50;
     }
 
     #spotlight h2 {
         background-color: rgba(248, 237, 235, 0.75);
-        font-size: 1.7rem;
+        font-size: 0.7rem;
         padding: 1rem;
         position: absolute;
-        margin-top: 3rem;
-        margin-left: 3rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
 
     /********************
         Weather
     ********************/
-    div.weather-section{
-        margin-left:450px; ;
-    }
+
     .weather-section {
-        grid-column: 1/3;
-        max-width: 500px;
-        margin: auto auto auto 480px;
+        margin:auto;
         border: 10px solid #ffa142;
         background-color: white;
-
-        
     }
 
     .weather-section h2 {
         padding-bottom: 2rem;
-        margin: 0 8rem 1rem 8rem;
-        border-bottom: 2px solid #584e50;
+        margin: 1.5rem auto 1rem auto;
+        border-bottom: 4px solid #ffa142;
+        
     }
 
     #temp {
@@ -437,7 +405,6 @@
         font-size: 1.4rem;
     }
 
-
     .weather-section section h2 {
         font-size: 2rem;
     }
@@ -450,8 +417,6 @@
         margin: 2rem;
     }
 
-
-
     /********************
         Temples Page
     ********************/
@@ -460,17 +425,17 @@
         font-size: 40px;
         color:#A0FF42;
     }
+    #page-info1{
+        border: 5px solid gray;
+        background-color: #ffa142;
+        font-size: 18px;
+        color:black;
+        padding:1rem 0 1rem 0;
+    }
 
     /********************
         Temples Cards
     ********************/
-
-    /* #temple-grid {
-        grid-column: 1/5;
-        margin: 2rem auto;
-            
-    } */
-
 
     .templeCards {
         background:linear-gradient(to right, rgba(132, 117, 119, 0.5), rgba(166, 162, 162, 0.32), rgba(248, 237, 235, 0.37), rgba(166, 162, 162, 0.42), rgba(132, 117, 119, 0.5));
@@ -494,26 +459,17 @@
         border: 2px solid #584e50;
         padding: 10px;
     }
-
-    /* .likeBtn {
-        font-size: 1.2rem;
-        background-color: transparent;
-    } */
-
     main .cards {
-        display: flex;
-        grid-column: 1/5;
-        margin: 0 auto;
-        padding:50px;
+        display: grid;
+        margin: auto;
 
     }
 
     .cards article{
-        max-width: 300px;
         border: 10px solid #ffa142;
         box-shadow: 3px 4px 4px #584e50;
         padding: 1rem;
-        margin: 2rem 0.4rem;
+        margin: 1rem auto 1rem auto;
     }
 
     .cards img {
@@ -539,8 +495,7 @@
     ********************/
 
     #amenities {
-        max-width: 450px;
-        margin: 5rem 0 7rem 450px;
+        margin: 1rem auto 1rem auto ;
         background-color: #ffa142;
     }
 
@@ -557,7 +512,7 @@
     }
 
     .fotos-images {
-        max-width: 400px;
+        max-width: 100%;
         object-fit: cover;
         border: 15px ridge #584e50
     }
@@ -573,22 +528,23 @@
 
     #specialized-list ul li {
         text-align: left;
-        margin-left: 6rem;
     }
 
     .serviceCards {
         background-color: #ffa142;
-        padding: 2rem;
         border: 1px solid #584e50;
-        margin-left: 50px;
-        width: 1200px;
     }
 
     .serviceCards #image-grid {
-        display: flex;
-        justify-content: center;
-        
+        width: 100%;
+        display: grid;
+        justify-content: center; 
     }
+
+    .serviceCards #image-grid img {
+        border: 10px solid gray;
+    }   
+
 
 
     .container img {
@@ -598,15 +554,13 @@
     }
 
     #specializedBtns {
-        margin: 4rem auto auto 520px; 
+        margin: 1rem auto auto auto; 
         max-width: 300px;
         grid-column: 1/5;
         border: 10px solid #ffa142;
         
     }
     #specializedBtns1 {
-        margin: 4rem auto auto 480px; 
-        width: 300px;
         grid-column: 1/5;
         border: 10px solid #ffa142;
         
@@ -637,27 +591,10 @@
     /********************
         Reservations
     ********************/
-    .contacto{
-        text-align: center;
-        width: 850px;
-        height: 600px;
-        grid-column: 2/4;
-        margin: 200px auto 10rem 200px;
-        padding: 2rem;
-        color: black;
-        border: 7px double #ffa142;
-        background: linear-gradient(to right,gray, #ffa142,gray);
-        border-radius: 20px;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
 
-    }
     .reserva {
         text-align: center;
-        max-width: 850px;
-        grid-column: 2/4;
-        margin: 3rem auto 10rem 120px;
+        margin: 2rem auto 2rem auto;
         padding: 2rem;
         color: black;
         border: 7px double #ffa142;
@@ -673,20 +610,18 @@
     }
 
     input {
-        color: black;
+        color: gray;
         border: none;
-        padding: 0.2rem;
         border-bottom: 1px solid #584e50;
         background-color: transparent;
-        margin-left: 1rem;
     }
     .comments textarea::placeholder,
     form p input::placeholder {
-        color: black;
+        color: gray;
     }
 
     select {
-        color: black;
+        color: gray;
         margin: 1rem 0;
     }
 
@@ -695,7 +630,7 @@
     }
 
     .form-group {
-        display: flex;
+        display: block;
     }
 
     .form-label {
@@ -716,20 +651,21 @@
     }
 
     .checks {
-        display: flex;
-        margin: 1rem 4rem;
+        display: grid;
     }
 
     .numbers {
         display: flex;
         margin: 1rem 8rem;
     }
+    textarea#content,div.comment{
+        width:100%;
+      }
 
     .comment-container {
+        
         display: grid;
-        margin: 1rem auto;
-        max-width: 850px;
-        height: 80px;
+        margin: 1rem auto -5rem;
     }
 
     .comment {
@@ -800,16 +736,7 @@
     /********************
         Reception
     ********************/
-    .pageIntro3 p {
-        margin-bottom:30px ;
-    }
-    .pageIntro3 h2{
-        font-family: 'Parisienne', cursive;
-        margin-bottom:30px ;
-        font-size:3rem;
 
-
-    }
     .lg-container {
         grid-column: 1/5;
         margin: 2rem auto;
@@ -817,19 +744,20 @@
     }
 
     .lg-container img {
-        margin: 0 1rem;
+        width:100%;
+        margin: auto auto 1rem auto;
         border: 1px solid #584e50;
-        max-width: 600px;
         border: 15px ridge gray ;
     }
-
-
+    ul#reclist li{
+        list-style:none;
+        }
+    p#recepcion{
+        padding: 2rem 0 1rem 0;
+    }
 
     #resbtn {
-        grid-column: 1/5;
-        margin: 3rem auto;
         font-size: 1.1rem;
-        
     }
 
     #resbtn button {
@@ -838,18 +766,9 @@
     }
 
     #recinfo {
-        max-width: 550px;
-        grid-column: 1/5;
-        margin: 2rem auto;
         border: 15px solid #ffa142 ;
     }
-    p#parrafo{
-        text-align: left;
-    }
 
-    #recinfo .pageIntro {
-        margin-bottom: 2rem;
-    }
 
     #recinfo .pageIntro h2 {
         margin-bottom: 1rem;
@@ -875,21 +794,19 @@
 
 
     }
-    .missimg {
-        grid-column: 1/5;
-        margin: 1rem auto;    
+    div.missimg img{
+        margin: 1rem auto auto auto; 
+        width: 100%;   
     }
+    picture.cuartos{
+        margin: auto;    
 
-    .missimg picture {
-        margin: 0 12px;
     }
-
-
 
     #missInfo,#missInfo1 {
         background: linear-gradient(to right,gray, #ffa142,gray);
         grid-column: 1/5;
-        margin: 2rem auto;
+        margin: 2rem auto 1rem auto ;
         border: 1px solid #584e50;
         border-radius: 20px;
     }
@@ -935,7 +852,18 @@
     /* **************
         Contact
     ****************/
+    .contacto{
+        text-align: center;
+        padding: 2rem;
+        color: black;
+        border: 7px double #ffa142;
+        background: linear-gradient(to right,gray, #ffa142,gray);
+        border-radius: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
 
+    }
     textarea {
         overflow: auto;
     }
@@ -1041,14 +969,10 @@
 
     footer {
         background-color: #ffa142;
-        min-width: 1300px;
+        display: grid;
     }
 
-    .content {
-        max-width: 1200px;
-        display: block;
-        
-    }
+
 
     footer ul a {
         text-decoration: none;
@@ -1062,11 +986,11 @@
         display: flex;
         line-height: 1.3rem;
         margin: auto;
+        border-bottom: 5px solid gray;
     }
 
     .footerList {
-        margin-right: 5rem;
-        margin: 1rem auto;
+        margin: 1rem auto 1rem auto ;
     }
 
     footer ul {
@@ -1074,29 +998,24 @@
     }
 
     .footAddress {
-        grid-column: 4;
-        grid-row: 1;
-        line-height: 1.5rem;
-        margin: 2rem auto;
-        color: #584e50;
+        margin: 1rem auto 2rem auto;
+        color: black;
 
     }
 
     .socialFoot {
-        grid-column: 4;
-        grid-row: 2;
-        margin-right: 2rem;
+        margin: auto auto 1rem auto;
+
+    }
+    .socialFoot img{
+        width: 40px;
+
     }
 
-    /* .address {
-        grid-column: 3;
-    } */
-
     .assignment {
-        grid-column: 1/5;
-        grid-row: 3;
+
         text-align: center;
-        color: #584e50;
+        color: black;
 
     }
 

@@ -1,37 +1,198 @@
 @media only screen and (min-width: 600px) {
 
+    header {
+        grid-template-rows: repeat(auto-fill, 1fr);
 
-    header{
-        width:1400px;
     }
-    footer{
-        width:1400px;
-    }
+    footer {
+        background-color: #ffa142;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-template-rows: repeat(auto-fill, 1fr);
 
-    .term{
-       max-width:1400px
     }
-    div.pageIntro3{
-        width: 1150px;
+    div.foot1 {
+        margin:3rem 1rem auto 1rem;
+        font-size:19px;
+        grid-column: 1;
+        border-top: 5px solid gray;
     }
+    div.socialFoot {
+        grid-column:2;
+        grid-row: 1;
+        margin: 11.5rem auto auto auto;
+    }
+    .socialFoot img{
+        width: 50px;
+
+    }
+    .assignment {
+        grid-column: 2;
+        grid-row:2;
+        margin-bottom: 1rem;
+    }
+    div.footAddress {
+        font-size:19px;
+        grid-column: 4;
+        grid-row:1;
+
+        margin: 3rem 1rem auto -8rem;
+
+    }
+    .header-logo {
+        display: flex;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin-left:1rem;
+        padding-bottom: 1rem;
+    }
+    picture.logo {
+        margin: 6rem 1rem 1.5rem 0.5rem;
+        width: 9.5rem;
+        height: 8rem
+        
+    }
+    picture.logo img{
+        width: 100%;
+        object-fit: cover
+    }
+    #title-small{
+        font-size: 40px;
+        margin:-2rem auto auto 4rem;
+    }
+    #title-big{
+        font-size: 60px;
+        margin:2rem auto 1.5rem -4rem;
+
+    }
+    a.socMedia img{
+        width: 35px;
+    }
+    .social {
+        margin:5rem 0 1rem -11em;
+    }
+    nav.nav.responsive #hambtn{
+        margin-right: -2rem;
+    } 
     div.pageIntro1{
-        width: 1200px;
+        width:99%;
     }
-    .band{
-        width: 1400px;
+    picture.heroimg{
+        padding:none;
+        width: 80%;
     }
-
-    main{
-        margin-left: 10px;
-    }
-
     article.hero{
-        margin-left:10px;
+        display: grid;
     }
-    .travel{
-        width: 400px;
+    div.travel{
+        margin-left:27rem;
+        margin-top:10rem
     }
 
+    .container {
+        display: flex;
+        gap: 0.3rem;
+        
+    }
+    .container article {
+        width: 100%;
+        margin: 1rem auto 1rem auto;
+        box-shadow: 3px 4px 4px #584e50;
+        border: 10px solid  #ffa142;
+    }
+    .weather-section {
+        width:92%;
+
+    }
+
+    .lg-container {
+        display:flex;
+        gap:0.5rem;
+        margin-Bottom:1rem;
+        
+    }
+
+    picture#img1,picture#img2{
+        width:380px;
+        object-fit:cover;
+    }
+    picture#img3{
+        margin-top: -2rem;
+    }
+    div.main-divs{
+        display:grid;
+    }
+    #amenities {
+        grid-column:1/2;
+        grid-row: 2;
+        margin-top: 2rem ;
+    }
+    div.serviceCards {
+        grid-column:1/3;
+        margin: auto;
+    }
+    div#image-grid{
+        padding: 0;
+        gap:0;
+    }
+    div.container{
+        width:30rem;
+    }
+
+    img#foto1{
+        margin-left: -25rem;
+    }
+    img#foto2{
+        margin: -17.6rem -8rem auto auto;
+    }
+    img#foto3{
+        margin: 3rem auto auto -7.5rem;
+    }
+    img#foto4{
+        margin: -17.5rem -5.5rem auto auto;
+    }
+
+    div#specializedBtns{
+        margin:-35rem 2rem 16rem auto;
+        grid-column:3;
+        grid-row: 2;
+        margin:none;
+    }
+
+    div.cards{
+        display:flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+
+    }
+    div.cards article{
+        width:48%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     #temple-grid {
         grid-column: 1/5;
         /* display: grid;

@@ -1,100 +1,35 @@
 @media only screen and (min-width: 1000px){
 
-    body{
-        max-width: 1400px;
-    }
 
-    header{
-        width:1400px;
-    }
-    footer{
-        width:1400px;
-    }
+  
 
-    #specializedBtns1{
-        width:800px;
-        margin-left:250px;
-    }
-    div.missimg{
-    margin-left:300px
-    }
-    form.contacto{
-        margin-left:-70px
-    }
 
-    #missInfo{
-        margin-left:400px
-    }
-    .term{
-       max-width:1400px
-    }
-    div.pageIntro3{
-        width: 1200px;
-    }
-    div.pageIntro1{
-        width: 1200px;
-    }
-    div.pageIntro5{
-        margin-left: -200px;
-        width: 1200px;
 
-    }
-    .band{
-        margin:0 auto ;
-        width: 1400px;
-    }
-    picture.heroimg{
-        margin-left:20px;
 
-    }
-    article.hero{
-        margin-left:10px;
-    }
-    .travel{
-        width: 400px;
-    }
 
-    #temple-grid {
-            justify-content: center;
-            display: flex;
-            margin-bottom: 1rem;
-        }
-    .serviceCards {
-            width: 1200px;
-            margin-left: 50px;    
-        }
-    .serviceCards img{
-        border: 10px solid  gray;
 
-    }
 
-    .heroimg {
-            background-color: gray;}
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-    #amenities.templeCards {
-        margin-left: 400px; 
-
-    }
-    .card .row {
-        grid-template-columns: repeat(auto-fill, 1fr);
-        }
-    
-    .card {
-            padding: 20px;
-        }
-    
-    .card h2 {
-            font-size: 34px;
-        }
-    
-    .card .row input[type="submit"] {
-            width: 100%;
-        }
-
-    #container {
-    margin: 20px auto;
-    width: 95%;
-    }
 
 }
