@@ -544,19 +544,11 @@
         background-color: #ffa142;
     }
 
-    #cuadro{
-        border:10px solid gray;
-        background-color: white
-        
-    }
-
-
     #amenities-list h2, #specialized-list h2 {
         font-size: 2rem;
         line-height: 4rem;
         text-align: center;
     }
-
 
     #amenities-list {
         line-height: 2rem;
